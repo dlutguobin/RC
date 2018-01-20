@@ -2,7 +2,7 @@ The target system is: Linux -  -
 The host system is: Linux - 4.4.0-104-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-gcc 
-Build flags: ;-O2;-pipe;-g
+Build flags: 
 Id flags: 
 
 The output was:
@@ -11,11 +11,11 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/siasun/urdf/build/CMakeFiles/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/siasun/urdf/build/CMakeFiles/3.5.1/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-g++ 
-Build flags: ;-O2;-pipe;-g
+Build flags: 
 Id flags: 
 
 The output was:
@@ -24,35 +24,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/siasun/urdf/build/CMakeFiles/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/siasun/urdf/build/CMakeFiles/3.5.1/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/siasun/urdf/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_550b0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_550b0.dir/build.make CMakeFiles/cmTC_550b0.dir/build
 make[1]: Entering directory '/home/siasun/urdf/build/CMakeFiles/CMakeTmp'
-/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/cmake -E cmake_progress_report /home/siasun/urdf/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o
-/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-gcc   -O2 -pipe -g      -o CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o   -c /home/siasun/urdf/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTryCompileExec
-/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
-/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-gcc    -O2 -pipe -g      -Wl,-O1 -Wl,--hash-style=gnu CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o  -o cmTryCompileExec -rdynamic 
+Building C object CMakeFiles/cmTC_550b0.dir/testCCompiler.c.o
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-gcc     -o CMakeFiles/cmTC_550b0.dir/testCCompiler.c.o   -c /home/siasun/urdf/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_550b0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_550b0.dir/link.txt --verbose=1
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-gcc       CMakeFiles/cmTC_550b0.dir/testCCompiler.c.o  -o cmTC_550b0 -rdynamic 
 make[1]: Leaving directory '/home/siasun/urdf/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/siasun/urdf/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_b0261/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b0261.dir/build.make CMakeFiles/cmTC_b0261.dir/build
 make[1]: Entering directory '/home/siasun/urdf/build/CMakeFiles/CMakeTmp'
-/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/cmake -E cmake_progress_report /home/siasun/urdf/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o
-/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-gcc   -O2 -pipe -g      -o CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o   -c /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
-Linking C executable cmTryCompileExec
-/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
-/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-gcc    -O2 -pipe -g     -v CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec -rdynamic  
+Building C object CMakeFiles/cmTC_b0261.dir/CMakeCCompilerABI.c.o
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-gcc     -o CMakeFiles/cmTC_b0261.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_b0261
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0261.dir/link.txt --verbose=1
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-gcc      -v CMakeFiles/cmTC_b0261.dir/CMakeCCompilerABI.c.o  -o cmTC_b0261 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/i686-wrs-linux-gnu-gcc
 COLLECT_LTO_WRAPPER=/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../libexec/gcc/i686-wrs-linux-gnu/4.6.3/lto-wrapper
@@ -62,24 +60,23 @@ Thread model: posix
 gcc version 4.6.3 (Wind River Linux Sourcery CodeBench 4.6a-127) 
 COMPILER_PATH=/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../libexec/gcc/i686-wrs-linux-gnu/4.6.3/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../libexec/gcc/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/bin/
 LIBRARY_PATH=/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib/../lib/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib/../lib/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/
-COLLECT_GCC_OPTIONS='-m32' '-O2' '-pipe' '-g' '-v' '-o' 'cmTryCompileExec' '-rdynamic' '-mtune=generic' '-march=i686' '-fremove-local-statics'
- /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../libexec/gcc/i686-wrs-linux-gnu/4.6.3/collect2 --sysroot=/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux --eh-frame-hdr -m elf_i386 -export-dynamic -dynamic-linker /lib/ld-linux.so.2 --hash-style=gnu -o cmTryCompileExec /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crt1.o /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crti.o /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/crtbegin.o -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3 -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib/../lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib/../lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/crtend.o /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crtn.o
+COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'cmTC_b0261' '-rdynamic' '-mtune=generic' '-march=i686'
+ /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../libexec/gcc/i686-wrs-linux-gnu/4.6.3/collect2 --sysroot=/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux --eh-frame-hdr -m elf_i386 -export-dynamic -dynamic-linker /lib/ld-linux.so.2 --hash-style=gnu -o cmTC_b0261 /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crt1.o /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crti.o /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/crtbegin.o -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3 -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib/../lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib/../lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib CMakeFiles/cmTC_b0261.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/crtend.o /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crtn.o
 make[1]: Leaving directory '/home/siasun/urdf/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
-  link line regex: [^( *|.*[/\])(atom-wrswrap-linux-gnu-ld|ld|collect2)[^/\]*( |$)]
+  link line regex: [^( *|.*[/\])(atom-wrswrap-linux-gnu-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/siasun/urdf/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_b0261/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_b0261.dir/build.make CMakeFiles/cmTC_b0261.dir/build]
   ignore line: [make[1]: Entering directory '/home/siasun/urdf/build/CMakeFiles/CMakeTmp']
-  ignore line: [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/cmake -E cmake_progress_report /home/siasun/urdf/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building C object CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-gcc   -O2 -pipe -g      -o CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o   -c /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTryCompileExec]
-  ignore line: [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1]
-  ignore line: [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-gcc    -O2 -pipe -g     -v CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec -rdynamic  ]
+  ignore line: [Building C object CMakeFiles/cmTC_b0261.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-gcc     -o CMakeFiles/cmTC_b0261.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_b0261]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0261.dir/link.txt --verbose=1]
+  ignore line: [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-gcc      -v CMakeFiles/cmTC_b0261.dir/CMakeCCompilerABI.c.o  -o cmTC_b0261 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/i686-wrs-linux-gnu-gcc]
   ignore line: [COLLECT_LTO_WRAPPER=/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../libexec/gcc/i686-wrs-linux-gnu/4.6.3/lto-wrapper]
@@ -90,8 +87,8 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 4.6.3 (Wind River Linux Sourcery CodeBench 4.6a-127) ]
   ignore line: [COMPILER_PATH=/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../libexec/gcc/i686-wrs-linux-gnu/4.6.3/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../libexec/gcc/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/bin/]
   ignore line: [LIBRARY_PATH=/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib/../lib/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib/../lib/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-m32' '-O2' '-pipe' '-g' '-v' '-o' 'cmTryCompileExec' '-rdynamic' '-mtune=generic' '-march=i686' '-fremove-local-statics']
-  link line: [ /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../libexec/gcc/i686-wrs-linux-gnu/4.6.3/collect2 --sysroot=/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux --eh-frame-hdr -m elf_i386 -export-dynamic -dynamic-linker /lib/ld-linux.so.2 --hash-style=gnu -o cmTryCompileExec /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crt1.o /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crti.o /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/crtbegin.o -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3 -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib/../lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib/../lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/crtend.o /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'cmTC_b0261' '-rdynamic' '-mtune=generic' '-march=i686']
+  link line: [ /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../libexec/gcc/i686-wrs-linux-gnu/4.6.3/collect2 --sysroot=/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux --eh-frame-hdr -m elf_i386 -export-dynamic -dynamic-linker /lib/ld-linux.so.2 --hash-style=gnu -o cmTC_b0261 /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crt1.o /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crti.o /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/crtbegin.o -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3 -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib/../lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib/../lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib CMakeFiles/cmTC_b0261.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/crtend.o /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crtn.o]
     arg [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../libexec/gcc/i686-wrs-linux-gnu/4.6.3/collect2] ==> ignore
     arg [--sysroot=/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
@@ -102,7 +99,7 @@ Parsed C implicit link information from above output:
     arg [/lib/ld-linux.so.2] ==> ignore
     arg [--hash-style=gnu] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec] ==> ignore
+    arg [cmTC_b0261] ==> ignore
     arg [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crt1.o] ==> ignore
     arg [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crti.o] ==> ignore
     arg [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/crtbegin.o] ==> ignore
@@ -114,7 +111,7 @@ Parsed C implicit link information from above output:
     arg [-L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib] ==> dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib]
     arg [-L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib] ==> dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib]
     arg [-L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib] ==> dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib]
-    arg [CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_b0261.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -130,45 +127,104 @@ Parsed C implicit link information from above output:
   remove lib [gcc_s]
   remove lib [gcc]
   remove lib [gcc_s]
-  collapse dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/lib/gcc/i686-wrs-linux-gnu/4.6.3]
-  collapse dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/lib/gcc]
-  collapse dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib/../lib] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/i686-wrs-linux-gnu/lib]
-  collapse dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib/../lib] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib]
-  collapse dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib]
-  collapse dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/i686-wrs-linux-gnu/lib]
-  collapse dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib]
-  collapse dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib]
+  collapse library dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/lib/gcc/i686-wrs-linux-gnu/4.6.3]
+  collapse library dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/lib/gcc]
+  collapse library dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib/../lib] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/i686-wrs-linux-gnu/lib]
+  collapse library dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib/../lib] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib]
+  collapse library dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib]
+  collapse library dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/i686-wrs-linux-gnu/lib]
+  collapse library dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib]
+  collapse library dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib]
   implicit libs: [c]
   implicit dirs: [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/lib/gcc/i686-wrs-linux-gnu/4.6.3;/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/lib/gcc;/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/i686-wrs-linux-gnu/lib;/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib;/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib]
+  implicit fwks: []
 
 
+
+
+Detecting C [-std=c1x] compiler features compiled with the following output:
+Change Dir: /home/siasun/urdf/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_38878/fast"
+/usr/bin/make -f CMakeFiles/cmTC_38878.dir/build.make CMakeFiles/cmTC_38878.dir/build
+make[1]: Entering directory '/home/siasun/urdf/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_38878.dir/feature_tests.c.o
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-gcc    -std=c1x -o CMakeFiles/cmTC_38878.dir/feature_tests.c.o   -c /home/siasun/urdf/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_38878
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_38878.dir/link.txt --verbose=1
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-gcc       CMakeFiles/cmTC_38878.dir/feature_tests.c.o  -o cmTC_38878 -rdynamic 
+make[1]: Leaving directory '/home/siasun/urdf/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/siasun/urdf/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2f59f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2f59f.dir/build.make CMakeFiles/cmTC_2f59f.dir/build
+make[1]: Entering directory '/home/siasun/urdf/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2f59f.dir/feature_tests.c.o
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-gcc    -std=c99 -o CMakeFiles/cmTC_2f59f.dir/feature_tests.c.o   -c /home/siasun/urdf/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_2f59f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f59f.dir/link.txt --verbose=1
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-gcc       CMakeFiles/cmTC_2f59f.dir/feature_tests.c.o  -o cmTC_2f59f -rdynamic 
+make[1]: Leaving directory '/home/siasun/urdf/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /home/siasun/urdf/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2ff88/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2ff88.dir/build.make CMakeFiles/cmTC_2ff88.dir/build
+make[1]: Entering directory '/home/siasun/urdf/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2ff88.dir/feature_tests.c.o
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-gcc    -std=c90 -o CMakeFiles/cmTC_2ff88.dir/feature_tests.c.o   -c /home/siasun/urdf/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_2ff88
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ff88.dir/link.txt --verbose=1
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-gcc       CMakeFiles/cmTC_2ff88.dir/feature_tests.c.o  -o cmTC_2ff88 -rdynamic 
+make[1]: Leaving directory '/home/siasun/urdf/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/siasun/urdf/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_cba34/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cba34.dir/build.make CMakeFiles/cmTC_cba34.dir/build
 make[1]: Entering directory '/home/siasun/urdf/build/CMakeFiles/CMakeTmp'
-/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/cmake -E cmake_progress_report /home/siasun/urdf/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o
-/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-g++    -O2 -pipe -g      -o CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o -c /home/siasun/urdf/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTryCompileExec
-/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
-/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-g++     -O2 -pipe -g      -Wl,-O1 -Wl,--hash-style=gnu CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec -rdynamic 
+Building CXX object CMakeFiles/cmTC_cba34.dir/testCXXCompiler.cxx.o
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-g++      -o CMakeFiles/cmTC_cba34.dir/testCXXCompiler.cxx.o -c /home/siasun/urdf/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_cba34
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cba34.dir/link.txt --verbose=1
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-g++        CMakeFiles/cmTC_cba34.dir/testCXXCompiler.cxx.o  -o cmTC_cba34 -rdynamic 
 make[1]: Leaving directory '/home/siasun/urdf/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/siasun/urdf/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_eb792/fast"
+/usr/bin/make -f CMakeFiles/cmTC_eb792.dir/build.make CMakeFiles/cmTC_eb792.dir/build
 make[1]: Entering directory '/home/siasun/urdf/build/CMakeFiles/CMakeTmp'
-/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/cmake -E cmake_progress_report /home/siasun/urdf/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o
-/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-g++    -O2 -pipe -g      -o CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -c /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTryCompileExec
-/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
-/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-g++     -O2 -pipe -g     -v CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec -rdynamic  
+Building CXX object CMakeFiles/cmTC_eb792.dir/CMakeCXXCompilerABI.cpp.o
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-g++      -o CMakeFiles/cmTC_eb792.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_eb792
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb792.dir/link.txt --verbose=1
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-g++       -v CMakeFiles/cmTC_eb792.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_eb792 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/i686-wrs-linux-gnu-g++
 COLLECT_LTO_WRAPPER=/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../libexec/gcc/i686-wrs-linux-gnu/4.6.3/lto-wrapper
@@ -178,24 +234,23 @@ Thread model: posix
 gcc version 4.6.3 (Wind River Linux Sourcery CodeBench 4.6a-127) 
 COMPILER_PATH=/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../libexec/gcc/i686-wrs-linux-gnu/4.6.3/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../libexec/gcc/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/bin/
 LIBRARY_PATH=/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib/../lib/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib/../lib/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/
-COLLECT_GCC_OPTIONS='-m32' '-O2' '-pipe' '-g' '-v' '-o' 'cmTryCompileExec' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=i686' '-fremove-local-statics'
- /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../libexec/gcc/i686-wrs-linux-gnu/4.6.3/collect2 --sysroot=/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux --eh-frame-hdr -m elf_i386 -export-dynamic -dynamic-linker /lib/ld-linux.so.2 --hash-style=gnu -o cmTryCompileExec /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crt1.o /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crti.o /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/crtbegin.o -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3 -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib/../lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib/../lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/crtend.o /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crtn.o
+COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'cmTC_eb792' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=i686'
+ /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../libexec/gcc/i686-wrs-linux-gnu/4.6.3/collect2 --sysroot=/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux --eh-frame-hdr -m elf_i386 -export-dynamic -dynamic-linker /lib/ld-linux.so.2 --hash-style=gnu -o cmTC_eb792 /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crt1.o /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crti.o /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/crtbegin.o -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3 -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib/../lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib/../lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib CMakeFiles/cmTC_eb792.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/crtend.o /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crtn.o
 make[1]: Leaving directory '/home/siasun/urdf/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
-  link line regex: [^( *|.*[/\])(atom-wrswrap-linux-gnu-ld|ld|collect2)[^/\]*( |$)]
+  link line regex: [^( *|.*[/\])(atom-wrswrap-linux-gnu-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/siasun/urdf/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_eb792/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_eb792.dir/build.make CMakeFiles/cmTC_eb792.dir/build]
   ignore line: [make[1]: Entering directory '/home/siasun/urdf/build/CMakeFiles/CMakeTmp']
-  ignore line: [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/cmake -E cmake_progress_report /home/siasun/urdf/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-g++    -O2 -pipe -g      -o CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -c /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTryCompileExec]
-  ignore line: [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1]
-  ignore line: [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-g++     -O2 -pipe -g     -v CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec -rdynamic  ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_eb792.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-g++      -o CMakeFiles/cmTC_eb792.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_eb792]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb792.dir/link.txt --verbose=1]
+  ignore line: [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-g++       -v CMakeFiles/cmTC_eb792.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_eb792 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/i686-wrs-linux-gnu-g++]
   ignore line: [COLLECT_LTO_WRAPPER=/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../libexec/gcc/i686-wrs-linux-gnu/4.6.3/lto-wrapper]
@@ -206,8 +261,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 4.6.3 (Wind River Linux Sourcery CodeBench 4.6a-127) ]
   ignore line: [COMPILER_PATH=/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../libexec/gcc/i686-wrs-linux-gnu/4.6.3/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../libexec/gcc/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/bin/]
   ignore line: [LIBRARY_PATH=/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib/../lib/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib/../lib/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib/:/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-m32' '-O2' '-pipe' '-g' '-v' '-o' 'cmTryCompileExec' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=i686' '-fremove-local-statics']
-  link line: [ /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../libexec/gcc/i686-wrs-linux-gnu/4.6.3/collect2 --sysroot=/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux --eh-frame-hdr -m elf_i386 -export-dynamic -dynamic-linker /lib/ld-linux.so.2 --hash-style=gnu -o cmTryCompileExec /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crt1.o /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crti.o /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/crtbegin.o -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3 -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib/../lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib/../lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/crtend.o /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'cmTC_eb792' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=i686']
+  link line: [ /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../libexec/gcc/i686-wrs-linux-gnu/4.6.3/collect2 --sysroot=/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux --eh-frame-hdr -m elf_i386 -export-dynamic -dynamic-linker /lib/ld-linux.so.2 --hash-style=gnu -o cmTC_eb792 /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crt1.o /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crti.o /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/crtbegin.o -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3 -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib/../lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib/../lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib -L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib CMakeFiles/cmTC_eb792.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/crtend.o /opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crtn.o]
     arg [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../libexec/gcc/i686-wrs-linux-gnu/4.6.3/collect2] ==> ignore
     arg [--sysroot=/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
@@ -218,7 +273,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib/ld-linux.so.2] ==> ignore
     arg [--hash-style=gnu] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec] ==> ignore
+    arg [cmTC_eb792] ==> ignore
     arg [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crt1.o] ==> ignore
     arg [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib/crti.o] ==> ignore
     arg [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/crtbegin.o] ==> ignore
@@ -230,7 +285,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib] ==> dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib]
     arg [-L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib] ==> dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib]
     arg [-L/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib] ==> dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib]
-    arg [CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_eb792.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -244,15 +299,190 @@ Parsed CXX implicit link information from above output:
   remove lib [gcc]
   remove lib [gcc_s]
   remove lib [gcc]
-  collapse dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/lib/gcc/i686-wrs-linux-gnu/4.6.3]
-  collapse dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/lib/gcc]
-  collapse dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib/../lib] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/i686-wrs-linux-gnu/lib]
-  collapse dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib/../lib] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib]
-  collapse dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib]
-  collapse dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/i686-wrs-linux-gnu/lib]
-  collapse dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib]
-  collapse dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib]
+  collapse library dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/lib/gcc/i686-wrs-linux-gnu/4.6.3]
+  collapse library dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/lib/gcc]
+  collapse library dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib/../lib] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/i686-wrs-linux-gnu/lib]
+  collapse library dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib/../lib] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib]
+  collapse library dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/../lib] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib]
+  collapse library dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/bin/../lib/gcc/i686-wrs-linux-gnu/4.6.3/../../../../i686-wrs-linux-gnu/lib] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/i686-wrs-linux-gnu/lib]
+  collapse library dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib]
+  collapse library dir [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib] ==> [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib]
   implicit libs: [stdc++;m;c]
   implicit dirs: [/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/lib/gcc/i686-wrs-linux-gnu/4.6.3;/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/lib/gcc;/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/toolchain/i686-wrs-linux-gnu/lib;/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/lib;/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++0x] compiler features compiled with the following output:
+Change Dir: /home/siasun/urdf/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6abac/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6abac.dir/build.make CMakeFiles/cmTC_6abac.dir/build
+make[1]: Entering directory '/home/siasun/urdf/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6abac.dir/feature_tests.cxx.o
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-g++     -std=c++0x -o CMakeFiles/cmTC_6abac.dir/feature_tests.cxx.o -c /home/siasun/urdf/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_6abac
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6abac.dir/link.txt --verbose=1
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-g++        CMakeFiles/cmTC_6abac.dir/feature_tests.cxx.o  -o cmTC_6abac -rdynamic 
+make[1]: Leaving directory '/home/siasun/urdf/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /home/siasun/urdf/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0ad2d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0ad2d.dir/build.make CMakeFiles/cmTC_0ad2d.dir/build
+make[1]: Entering directory '/home/siasun/urdf/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0ad2d.dir/feature_tests.cxx.o
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-g++     -std=c++98 -o CMakeFiles/cmTC_0ad2d.dir/feature_tests.cxx.o -c /home/siasun/urdf/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_0ad2d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ad2d.dir/link.txt --verbose=1
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-g++        CMakeFiles/cmTC_0ad2d.dir/feature_tests.cxx.o  -o cmTC_0ad2d -rdynamic 
+make[1]: Leaving directory '/home/siasun/urdf/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/siasun/urdf/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_92d38/fast"
+/usr/bin/make -f CMakeFiles/cmTC_92d38.dir/build.make CMakeFiles/cmTC_92d38.dir/build
+make[1]: Entering directory '/home/siasun/urdf/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_92d38.dir/CheckIncludeFile.c.o
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-gcc     -o CMakeFiles/cmTC_92d38.dir/CheckIncludeFile.c.o   -c /home/siasun/urdf/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_92d38
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92d38.dir/link.txt --verbose=1
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-gcc       CMakeFiles/cmTC_92d38.dir/CheckIncludeFile.c.o  -o cmTC_92d38 -rdynamic 
+make[1]: Leaving directory '/home/siasun/urdf/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/siasun/urdf/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f84b6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f84b6.dir/build.make CMakeFiles/cmTC_f84b6.dir/build
+make[1]: Entering directory '/home/siasun/urdf/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f84b6.dir/CheckFunctionExists.c.o
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-gcc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_f84b6.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f84b6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f84b6.dir/link.txt --verbose=1
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-gcc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_f84b6.dir/CheckFunctionExists.c.o  -o cmTC_f84b6 -rdynamic -lpthread 
+make[1]: Leaving directory '/home/siasun/urdf/build/CMakeFiles/CMakeTmp'
 
 
