@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++0x
 
 CXX_DEFINES = -DTIXML_USE_STL
 
-CXX_INCLUDES = -I/home/siasun/urdf/include -I/home/siasun/urdf/urdf/include -I/home/siasun/urdf/exceptions/include -I/home/siasun/urdf/random_numbers/include -I/home/siasun/urdf/srdfdom/include -I/home/siasun/urdf/robot_model/include -I/home/siasun/urdf/kinematics_base/include -I/home/siasun/urdf/urdf/test/gtest/include -I/home/siasun/urdf/urdf/test/gtest -I/home/siasun/urdf/urdf/test 
+CXX_INCLUDES = -I/home/siasun/urdf/include -I/home/siasun/urdf/urdf/include -I/home/siasun/urdf/exceptions/include -I/home/siasun/urdf/random_numbers/include -I/home/siasun/urdf/srdfdom/include -I/home/siasun/urdf/robot_model/include -I/home/siasun/urdf/robot_state/include -I/home/siasun/urdf/transforms/include -I/home/siasun/urdf/kinematics_base/include -I/home/siasun/urdf/urdf/test/gtest/include -I/home/siasun/urdf/urdf/test/gtest -I/home/siasun/urdf/urdf/test 
 

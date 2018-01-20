@@ -16,7 +16,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../kinematics_base/CMakeLists.txt"
   "../random_numbers/CMakeLists.txt"
   "../robot_model/CMakeLists.txt"
+  "../robot_state/CMakeLists.txt"
   "../srdfdom/CMakeLists.txt"
+  "../transforms/CMakeLists.txt"
   "../urdf/CMakeLists.txt"
   "../urdf/test/CMakeLists.txt"
   "/usr/share/cmake-3.5/Modules/CMakeCInformation.cmake"
@@ -61,6 +63,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "robot_model/CMakeFiles/CMakeDirectoryInformation.cmake"
   "exceptions/CMakeFiles/CMakeDirectoryInformation.cmake"
   "kinematics_base/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "robot_state/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "transforms/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -81,4 +85,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "robot_model/CMakeFiles/moveit_robot_model.dir/DependInfo.cmake"
   "exceptions/CMakeFiles/moveit_exceptions.dir/DependInfo.cmake"
   "kinematics_base/CMakeFiles/moveit_kinematics_base.dir/DependInfo.cmake"
+  "robot_state/CMakeFiles/moveit_robot_state.dir/DependInfo.cmake"
+  "transforms/CMakeFiles/moveit_transforms.dir/DependInfo.cmake"
   )

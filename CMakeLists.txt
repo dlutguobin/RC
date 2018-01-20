@@ -10,6 +10,8 @@ include_directories(
     random_numbers/include
     srdfdom/include
     robot_model/include
+    robot_state/include
+    transforms/include
     kinematics_base/include
   )
 
@@ -21,3 +23,5 @@ add_subdirectory(srdfdom)
 add_subdirectory(robot_model)
 add_subdirectory(exceptions)
 add_subdirectory(kinematics_base)
+add_subdirectory(robot_state)
+add_subdirectory(transforms)

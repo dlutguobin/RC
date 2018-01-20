@@ -223,6 +223,12 @@ moveit_profiler_LIB_DEPENDS:STATIC=general;console_bridge;general;urdfdom;
 moveit_robot_model_LIB_DEPENDS:STATIC=general;moveit_profiler;general;moveit_exceptions;general;moveit_kinematics_base;general;console_bridge;general;urdfdom;
 
 //Dependencies for the target
+moveit_robot_state_LIB_DEPENDS:STATIC=general;moveit_robot_model;general;moveit_kinematics_base;general;moveit_transforms;general;console_bridge;general;urdfdom;
+
+//Dependencies for the target
+moveit_transforms_LIB_DEPENDS:STATIC=general;console_bridge;general;urdfdom;
+
+//Dependencies for the target
 random_numbers_LIB_DEPENDS:STATIC=general;/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/libboost_date_time.so;general;/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/libboost_system.so;general;/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/libboost_thread.so;general;/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/lib/libpthread.so;
 
 //Dependencies for the target
@@ -352,7 +358,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

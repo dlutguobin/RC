@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++0x
 
 CXX_DEFINES = -DTIXML_USE_STL
 
-CXX_INCLUDES = -I/home/siasun/urdf/include -I/home/siasun/urdf/urdf/include -I/home/siasun/urdf/exceptions/include -I/home/siasun/urdf/random_numbers/include -I/home/siasun/urdf/srdfdom/include -I/home/siasun/urdf/robot_model/include -I/home/siasun/urdf/kinematics_base/include -I/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/include 
+CXX_INCLUDES = -I/home/siasun/urdf/include -I/home/siasun/urdf/urdf/include -I/home/siasun/urdf/exceptions/include -I/home/siasun/urdf/random_numbers/include -I/home/siasun/urdf/srdfdom/include -I/home/siasun/urdf/robot_model/include -I/home/siasun/urdf/robot_state/include -I/home/siasun/urdf/transforms/include -I/home/siasun/urdf/kinematics_base/include -I/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/include 
 

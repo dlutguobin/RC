@@ -40,6 +40,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/siasun/urdf/build/robot_model/cmake_install.cmake")
   include("/home/siasun/urdf/build/exceptions/cmake_install.cmake")
   include("/home/siasun/urdf/build/kinematics_base/cmake_install.cmake")
+  include("/home/siasun/urdf/build/robot_state/cmake_install.cmake")
+  include("/home/siasun/urdf/build/transforms/cmake_install.cmake")
 
 endif()
 

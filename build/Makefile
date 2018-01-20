@@ -318,6 +318,32 @@ moveit_kinematics_base/fast:
 	$(MAKE) -f kinematics_base/CMakeFiles/moveit_kinematics_base.dir/build.make kinematics_base/CMakeFiles/moveit_kinematics_base.dir/build
 .PHONY : moveit_kinematics_base/fast
 
+#=============================================================================
+# Target rules for targets named moveit_robot_state
+
+# Build rule for target.
+moveit_robot_state: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 moveit_robot_state
+.PHONY : moveit_robot_state
+
+# fast build rule for target.
+moveit_robot_state/fast:
+	$(MAKE) -f robot_state/CMakeFiles/moveit_robot_state.dir/build.make robot_state/CMakeFiles/moveit_robot_state.dir/build
+.PHONY : moveit_robot_state/fast
+
+#=============================================================================
+# Target rules for targets named moveit_transforms
+
+# Build rule for target.
+moveit_transforms: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 moveit_transforms
+.PHONY : moveit_transforms
+
+# fast build rule for target.
+moveit_transforms/fast:
+	$(MAKE) -f transforms/CMakeFiles/moveit_transforms.dir/build.make transforms/CMakeFiles/moveit_transforms.dir/build
+.PHONY : moveit_transforms/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -342,6 +368,8 @@ help:
 	@echo "... moveit_robot_model"
 	@echo "... moveit_exceptions"
 	@echo "... moveit_kinematics_base"
+	@echo "... moveit_robot_state"
+	@echo "... moveit_transforms"
 .PHONY : help
 
 

@@ -30,3 +30,9 @@
 /home/siasun/urdf/build/kinematics_base/CMakeFiles/rebuild_cache.dir
 /home/siasun/urdf/build/kinematics_base/CMakeFiles/edit_cache.dir
 /home/siasun/urdf/build/kinematics_base/CMakeFiles/moveit_kinematics_base.dir
+/home/siasun/urdf/build/robot_state/CMakeFiles/edit_cache.dir
+/home/siasun/urdf/build/robot_state/CMakeFiles/rebuild_cache.dir
+/home/siasun/urdf/build/robot_state/CMakeFiles/moveit_robot_state.dir
+/home/siasun/urdf/build/transforms/CMakeFiles/edit_cache.dir
+/home/siasun/urdf/build/transforms/CMakeFiles/rebuild_cache.dir
+/home/siasun/urdf/build/transforms/CMakeFiles/moveit_transforms.dir

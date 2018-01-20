@@ -25,6 +25,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../random_numbers/include"
   "../srdfdom/include"
   "../robot_model/include"
+  "../robot_state/include"
+  "../transforms/include"
   "../kinematics_base/include"
   )
 

@@ -22,6 +22,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../random_numbers/include"
   "../srdfdom/include"
   "../robot_model/include"
+  "../robot_state/include"
+  "../transforms/include"
   "../kinematics_base/include"
   "/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/intel_atom_baytrail-wrs-linux/usr/include"
   )
