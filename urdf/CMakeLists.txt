@@ -12,11 +12,23 @@ target_link_libraries(urdfdom_world tinyxml console_bridge)
 add_library(urdfdom_model SHARED src/urdf_parser/pose.cpp src/urdf_parser/model.cpp src/urdf_parser/link.cpp src/urdf_parser/joint.cpp)
 target_link_libraries(urdfdom_model tinyxml console_bridge)
 
+add_library(urdfdom_sensor SHARED src/urdf_parser/urdf_sensor.cpp)
+target_link_libraries(urdfdom_sensor urdfdom_model tinyxml console_bridge)
+
+add_library(urdfdom_model_state SHARED src/urdf_parser/urdf_model_state.cpp src/urdf_parser/twist.cpp)
+target_link_libraries(urdfdom_model_state tinyxml console_bridge)
+
+add_library(urdfdom SHARED src/urdf_parser/pose.cpp src/urdf_parser/model.cpp src/urdf_parser/link.cpp src/urdf_parser/joint.cpp
+        src/urdf_parser/world.cpp src/urdf_parser/urdf_sensor.cpp src/urdf_parser/urdf_model_state.cpp src/urdf_parser/twist.cpp)
+target_link_libraries(urdfdom tinyxml console_bridge)
+
 add_library(urdf SHARED src/model.cpp)
 target_link_libraries(urdf tinyxml urdfdom_model)
 
 add_library(kdl_parser SHARED src/kdl_parser.cpp)
 target_link_libraries(kdl_parser tinyxml urdf orocos-kdl)
+
+
 
 add_executable(check_urdf src/urdf_parser/check_urdf.cpp)
 target_link_libraries(check_urdf urdfdom_model urdfdom_world)

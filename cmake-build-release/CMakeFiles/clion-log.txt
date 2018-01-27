@@ -1,0 +1,18 @@
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/cmake -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - Unix Makefiles" /home/siasun/urdf
+-- Boost version: 1.58.0
+-- Found the following Boost libraries:
+--   date_time
+--   system
+--   thread
+-- Boost version: 1.58.0
+-- catkin not found
+-- Searching for Poco library...
+--   Found Poco!
+-- components found: Foundation.
+-- Boost version: 1.58.0
+-- Found the following Boost libraries:
+--   system
+--   filesystem
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/siasun/urdf/cmake-build-release

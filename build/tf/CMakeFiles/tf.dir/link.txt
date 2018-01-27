@@ -1,0 +1,2 @@
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-ar cr libtf.a  CMakeFiles/tf.dir/src/cache.cpp.o CMakeFiles/tf.dir/src/tf.cpp.o CMakeFiles/tf.dir/src/transform_broadcaster.cpp.o CMakeFiles/tf.dir/src/transform_listener.cpp.o
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-ranlib libtf.a

@@ -10,7 +10,7 @@ add_library(${MOVEIT_LIB_NAME}
 )
 #set_target_properties(${MOVEIT_LIB_NAME} PROPERTIES VERSION ${${PROJECT_NAME}_VERSION})
 
-target_link_libraries(${MOVEIT_LIB_NAME} moveit_robot_model moveit_kinematics_base moveit_transforms console_bridge urdfdom ${Boost_LIBRARIES})
+target_link_libraries(${MOVEIT_LIB_NAME} moveit_robot_model moveit_kinematics_base moveit_transforms console_bridge eigen_conversions rostime ${Boost_LIBRARIES})
 
 #add_dependencies(${MOVEIT_LIB_NAME} ${catkin_EXPORTED_TARGETS})
 #

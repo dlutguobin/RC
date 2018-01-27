@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -std=c++0x  -O3 -DNDEBUG   -shared -Wl,-soname,libkdl_parser.so -o libkdl_parser.so CMakeFiles/kdl_parser.dir/src/kdl_parser.cpp.o  -L/home/siasun/urdf/urdf/lib -ltinyxml liburdf.so -lorocos-kdl liburdfdom_model.so -ltinyxml -lconsole_bridge -Wl,-rpath,/home/siasun/urdf/urdf/lib:/home/siasun/urdf/cmake-build-release/urdf 

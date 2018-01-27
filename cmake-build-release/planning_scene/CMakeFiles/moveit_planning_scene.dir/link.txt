@@ -1,0 +1,2 @@
+/usr/bin/ar cr libmoveit_planning_scene.a  CMakeFiles/moveit_planning_scene.dir/src/planning_scene.cpp.o
+/usr/bin/ranlib libmoveit_planning_scene.a

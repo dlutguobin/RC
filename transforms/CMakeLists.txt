@@ -7,7 +7,7 @@ include_directories(
 add_library(${MOVEIT_LIB_NAME} src/transforms.cpp)
 #set_target_properties(${MOVEIT_LIB_NAME} PROPERTIES VERSION ${${PROJECT_NAME}_VERSION})
 
-target_link_libraries(${MOVEIT_LIB_NAME} console_bridge urdfdom ${Boost_LIBRARIES})
+target_link_libraries(${MOVEIT_LIB_NAME} console_bridge  ${Boost_LIBRARIES})
 #add_dependencies(${MOVEIT_LIB_NAME} ${catkin_EXPORTED_TARGETS})
 
 #install(TARGETS ${MOVEIT_LIB_NAME}

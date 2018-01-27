@@ -1,0 +1,2 @@
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-ar cr libclass_loader.a  CMakeFiles/class_loader.dir/src/class_loader.cpp.o CMakeFiles/class_loader.dir/src/class_loader_core.cpp.o CMakeFiles/class_loader.dir/src/meta_object.cpp.o CMakeFiles/class_loader.dir/src/multi_library_class_loader.cpp.o
+/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-ranlib libclass_loader.a

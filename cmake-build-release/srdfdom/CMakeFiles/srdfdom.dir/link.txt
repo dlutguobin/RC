@@ -1,0 +1,2 @@
+/usr/bin/ar cr libsrdfdom.a  CMakeFiles/srdfdom.dir/src/model.cpp.o CMakeFiles/srdfdom.dir/src/srdf_writer.cpp.o
+/usr/bin/ranlib libsrdfdom.a

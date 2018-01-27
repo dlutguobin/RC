@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="pluginlib" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\urdf\;CMake Files\urdf\test\;CMake Files\random_numbers\;CMake Files\srdfdom\;CMake Files\robot_model\;CMake Files\exceptions\;CMake Files\kinematics_base\;CMake Files\robot_state\;CMake Files\transforms\;CMake Files\collision_detection\;CMake Files\collision_detection_fcl\;CMake Files\kinematic_constraints\;CMake Files\robot_trajectory\;CMake Files\trajectory_processing\;CMake Files\planning_scene\;CMake Files\class_loader\;CMake Files\class_loader\cmake\;CMake Files\pluginlib\;CMake Files\planning_interface\;CMake Files\planning_request_adapter\;CMake Files\rdf_loader\;CMake Files\robot_model_loader\;CMake Files\kinematics_plugin_loader\;CMake Files\geometric_shapes\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\usr\;CMake Files\..\..\..\usr\lib\;CMake Files\..\..\..\usr\lib\cmake\;CMake Files\..\..\..\usr\lib\cmake\eigen3\;CMake Files\..\..\..\opt\;CMake Files\..\..\..\opt\ros\;CMake Files\..\..\..\opt\ros\kinetic\;CMake Files\..\..\..\opt\ros\kinetic\share\;CMake Files\..\..\..\opt\ros\kinetic\share\octomap\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/siasun/urdf/cmake-build-release/pluginlib" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/siasun/urdf/cmake-build-release/pluginlib/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/siasun/urdf/cmake-build-release/pluginlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/siasun/urdf/cmake-build-release/pluginlib/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/siasun/urdf/cmake-build-release/pluginlib/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="plugin_tool">
+         <Option output="/home/siasun/urdf/cmake-build-release/pluginlib/plugin_tool" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/siasun/urdf/cmake-build-release/pluginlib" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DTIXML_USE_STL" />
+            <Add directory="/home/siasun/urdf/class_loader/include" />
+            <Add directory="/home/siasun/urdf/collision_detection/include" />
+            <Add directory="/home/siasun/urdf/collision_detection_fcl/include" />
+            <Add directory="/home/siasun/urdf/exceptions/include" />
+            <Add directory="/home/siasun/urdf/geometric_shapes/include" />
+            <Add directory="/home/siasun/urdf/include" />
+            <Add directory="/home/siasun/urdf/kinematic_constraints/include" />
+            <Add directory="/home/siasun/urdf/kinematics_base/include" />
+            <Add directory="/home/siasun/urdf/kinematics_plugin_loader/include" />
+            <Add directory="/home/siasun/urdf/planning_interface/include" />
+            <Add directory="/home/siasun/urdf/planning_request_adapter/include" />
+            <Add directory="/home/siasun/urdf/planning_scene/include" />
+            <Add directory="/home/siasun/urdf/pluginlib/include" />
+            <Add directory="/home/siasun/urdf/random_numbers/include" />
+            <Add directory="/home/siasun/urdf/rdf_loader/include" />
+            <Add directory="/home/siasun/urdf/robot_model/include" />
+            <Add directory="/home/siasun/urdf/robot_model_loader/include" />
+            <Add directory="/home/siasun/urdf/robot_state/include" />
+            <Add directory="/home/siasun/urdf/robot_trajectory/include" />
+            <Add directory="/home/siasun/urdf/srdfdom/include" />
+            <Add directory="/home/siasun/urdf/trajectory_processing/include" />
+            <Add directory="/home/siasun/urdf/transforms/include" />
+            <Add directory="/home/siasun/urdf/urdf/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/siasun/urdf/cmake-build-release/pluginlib/Makefile&quot;  VERBOSE=1 plugin_tool" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/siasun/urdf/cmake-build-release/pluginlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/siasun/urdf/cmake-build-release/pluginlib/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/siasun/urdf/cmake-build-release/pluginlib/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="plugin_tool/fast">
+         <Option output="/home/siasun/urdf/cmake-build-release/pluginlib/plugin_tool" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/siasun/urdf/cmake-build-release/pluginlib" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DTIXML_USE_STL" />
+            <Add directory="/home/siasun/urdf/class_loader/include" />
+            <Add directory="/home/siasun/urdf/collision_detection/include" />
+            <Add directory="/home/siasun/urdf/collision_detection_fcl/include" />
+            <Add directory="/home/siasun/urdf/exceptions/include" />
+            <Add directory="/home/siasun/urdf/geometric_shapes/include" />
+            <Add directory="/home/siasun/urdf/include" />
+            <Add directory="/home/siasun/urdf/kinematic_constraints/include" />
+            <Add directory="/home/siasun/urdf/kinematics_base/include" />
+            <Add directory="/home/siasun/urdf/kinematics_plugin_loader/include" />
+            <Add directory="/home/siasun/urdf/planning_interface/include" />
+            <Add directory="/home/siasun/urdf/planning_request_adapter/include" />
+            <Add directory="/home/siasun/urdf/planning_scene/include" />
+            <Add directory="/home/siasun/urdf/pluginlib/include" />
+            <Add directory="/home/siasun/urdf/random_numbers/include" />
+            <Add directory="/home/siasun/urdf/rdf_loader/include" />
+            <Add directory="/home/siasun/urdf/robot_model/include" />
+            <Add directory="/home/siasun/urdf/robot_model_loader/include" />
+            <Add directory="/home/siasun/urdf/robot_state/include" />
+            <Add directory="/home/siasun/urdf/robot_trajectory/include" />
+            <Add directory="/home/siasun/urdf/srdfdom/include" />
+            <Add directory="/home/siasun/urdf/trajectory_processing/include" />
+            <Add directory="/home/siasun/urdf/transforms/include" />
+            <Add directory="/home/siasun/urdf/urdf/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/siasun/urdf/cmake-build-release/pluginlib/Makefile&quot;  VERBOSE=1 plugin_tool/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/siasun/urdf/cmake-build-release/pluginlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/siasun/urdf/cmake-build-release/pluginlib/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/siasun/urdf/cmake-build-release/pluginlib/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/siasun/urdf/pluginlib/src/plugin_tool.cpp">
+      </Unit>
+      <Unit filename="/home/siasun/urdf/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/urdf/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\urdf\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/urdf/test/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\urdf\test\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/random_numbers/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\random_numbers\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/srdfdom/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\srdfdom\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/robot_model/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\robot_model\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/exceptions/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\exceptions\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/kinematics_base/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\kinematics_base\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/robot_state/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\robot_state\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/transforms/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\transforms\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/collision_detection/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\collision_detection\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/collision_detection_fcl/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\collision_detection_fcl\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/kinematic_constraints/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\kinematic_constraints\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/robot_trajectory/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\robot_trajectory\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/trajectory_processing/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\trajectory_processing\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/planning_scene/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\planning_scene\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/class_loader/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\class_loader\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/class_loader/cmake/PocoConfig.cmake">
+          <Option virtualFolder="CMake Files\class_loader\cmake\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/pluginlib/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\pluginlib\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/pluginlib/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\pluginlib\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/planning_interface/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\planning_interface\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/planning_request_adapter/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\planning_request_adapter\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/rdf_loader/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\rdf_loader\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/robot_model_loader/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\robot_model_loader\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/kinematics_plugin_loader/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\kinematics_plugin_loader\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/geometric_shapes/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\geometric_shapes\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/../../../usr/lib/cmake/eigen3/Eigen3Config.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\lib\cmake\eigen3\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/../../../opt/ros/kinetic/share/octomap/octomap-config-version.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\opt\ros\kinetic\share\octomap\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/../../../opt/ros/kinetic/share/octomap/octomap-config.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\opt\ros\kinetic\share\octomap\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

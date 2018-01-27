@@ -1042,6 +1042,7 @@ void moveit::core::RobotState::getRobotMarkers(visualization_msgs::MarkerArray& 
 void moveit::core::RobotState::getRobotMarkers(visualization_msgs::MarkerArray& arr,
                                                const std::vector<std::string>& link_names, bool include_attached) const
 {
+#if 1
   ros::Time tm = ros::Time::now();
   for (std::size_t i = 0; i < link_names.size(); ++i)
   {
@@ -1106,6 +1107,7 @@ void moveit::core::RobotState::getRobotMarkers(visualization_msgs::MarkerArray& 
       arr.markers.push_back(mark);
     }
   }
+#endif
 }
 
 Eigen::MatrixXd moveit::core::RobotState::getJacobian(const JointModelGroup* group,

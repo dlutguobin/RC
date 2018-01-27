@@ -1,0 +1,2 @@
+/usr/bin/ar cr libclass_loader.a  CMakeFiles/class_loader.dir/src/class_loader.cpp.o CMakeFiles/class_loader.dir/src/class_loader_core.cpp.o CMakeFiles/class_loader.dir/src/meta_object.cpp.o CMakeFiles/class_loader.dir/src/multi_library_class_loader.cpp.o
+/usr/bin/ranlib libclass_loader.a

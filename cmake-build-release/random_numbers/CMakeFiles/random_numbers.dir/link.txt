@@ -1,0 +1,2 @@
+/usr/bin/ar cr librandom_numbers.a  CMakeFiles/random_numbers.dir/src/random_numbers.cpp.o
+/usr/bin/ranlib librandom_numbers.a
