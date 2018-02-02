@@ -36,7 +36,7 @@
 
 // MoveIt!
 #include <moveit/rdf_loader/rdf_loader.h>
-//#include <moveit/profiler/profiler.h>
+#include <moveit/profiler/profiler.h>
 
 // ROS
 //#include <ros/ros.h>
@@ -53,8 +53,8 @@
 
 rdf_loader::RDFLoader::RDFLoader(const std::string& robot_description)
 {
-  //moveit::tools::Profiler::ScopedStart prof_start;
-  //moveit::tools::Profiler::ScopedBlock prof_block("RDFLoader(robot_description)");
+  moveit::tools::Profiler::ScopedStart prof_start;
+  moveit::tools::Profiler::ScopedBlock prof_block("RDFLoader(robot_description)");
 
 #if 0
   ros::WallTime start = ros::WallTime::now();
@@ -98,8 +98,8 @@ rdf_loader::RDFLoader::RDFLoader(const std::string& robot_description)
 
 rdf_loader::RDFLoader::RDFLoader(const std::string& urdf_string, const std::string& srdf_string)
 {
-  //moveit::tools::Profiler::ScopedStart prof_start;
-  //moveit::tools::Profiler::ScopedBlock prof_block("RDFLoader(string)");
+  moveit::tools::Profiler::ScopedStart prof_start;
+  moveit::tools::Profiler::ScopedBlock prof_block("RDFLoader(string)");
 
   urdf::Model* umodel = new urdf::Model();
   urdf_.reset(umodel);
@@ -121,8 +121,8 @@ rdf_loader::RDFLoader::RDFLoader(const std::string& urdf_string, const std::stri
 
 rdf_loader::RDFLoader::RDFLoader(TiXmlDocument* urdf_doc, TiXmlDocument* srdf_doc)
 {
-  //moveit::tools::Profiler::ScopedStart prof_start;
-  //moveit::tools::Profiler::ScopedBlock prof_block("RDFLoader(XML)");
+  moveit::tools::Profiler::ScopedStart prof_start;
+  moveit::tools::Profiler::ScopedBlock prof_block("RDFLoader(XML)");
 
   urdf::Model* umodel = new urdf::Model();
   urdf_.reset(umodel);

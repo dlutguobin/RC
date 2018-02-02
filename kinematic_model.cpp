@@ -139,7 +139,7 @@ int main(int argc, char **argv)
     // ^^^^^^^^^^^^
     // setJointGroupPositions() does not enforce joint limits by itself, but a call to enforceBounds() will do it.
     /* Set one joint in the right arm outside its joint limit */
-    joint_values[0] = 1.57;
+    joint_values[1] = 3.14;
     kinematic_state->setJointGroupPositions(joint_model_group, joint_values);
 
     /* Check whether any joint is outside its joint limits */
@@ -171,6 +171,8 @@ int main(int argc, char **argv)
     // "r_wrist_roll_link" which is the most distal link in the
     // "right_arm" of the robot.
     kinematic_state->setToRandomPositions(joint_model_group);
+    //double *j;
+    const double *j = kinematic_state->getJointPositions("J1");
     const Eigen::Affine3d &end_effector_state = kinematic_state->getGlobalLinkTransform("L6");
 
     /* Print end-effector pose. Remember that this is in the model frame */

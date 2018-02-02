@@ -25,5 +25,5 @@ set(${PROJECT_NAME}_HDRS
   include/class_loader/meta_object.h
   include/class_loader/multi_library_class_loader.h
 )
-add_library(${PROJECT_NAME} ${${PROJECT_NAME}_SRCS} ${${PROJECT_NAME}_HDRS})
+add_library(${PROJECT_NAME} SHARED ${${PROJECT_NAME}_SRCS} ${${PROJECT_NAME}_HDRS})
 target_link_libraries(${PROJECT_NAME} ${Boost_LIBRARIES} console_bridge pthread ${Poco_LIBRARIES})

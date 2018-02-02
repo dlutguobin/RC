@@ -38,7 +38,7 @@
 #include <moveit/robot_model/robot_model.h>
 #include <geometric_shapes/shape_operations.h>
 #include <boost/math/constants/constants.hpp>
-//#include <moveit/profiler/profiler.h>
+#include <moveit/profiler/profiler.h>
 #include <algorithm>
 #include <limits>
 #include <queue>
@@ -80,8 +80,8 @@ const moveit::core::LinkModel* moveit::core::RobotModel::getRootLink() const
 void moveit::core::RobotModel::buildModel(const urdf::ModelInterface& urdf_model, const srdf::Model& srdf_model)
 {
     // by lgb
-  //moveit::tools::Profiler::ScopedStart prof_start;
-  //moveit::tools::Profiler::ScopedBlock prof_block("RobotModel::buildModel");
+  moveit::tools::Profiler::ScopedStart prof_start;
+  moveit::tools::Profiler::ScopedBlock prof_block("RobotModel::buildModel");
 
   root_joint_ = NULL;
   root_link_ = NULL;
@@ -253,8 +253,8 @@ void moveit::core::RobotModel::computeDescendants()
 void moveit::core::RobotModel::buildJointInfo()
 {
     //by lgb
-  //moveit::tools::Profiler::ScopedStart prof_start;
-  //moveit::tools::Profiler::ScopedBlock prof_block("RobotModel::buildJointInfo");
+  moveit::tools::Profiler::ScopedStart prof_start;
+  moveit::tools::Profiler::ScopedBlock prof_block("RobotModel::buildJointInfo");
 
   // construct additional maps for easy access by name
   variable_count_ = 0;

@@ -61,6 +61,8 @@ namespace
 {
 std::vector<std::string> catkinFindLib() {
   std::vector<std::string> lib_paths;
+  lib_paths.push_back("/media/ram/user_lib");
+#if 0
   const char* env = std::getenv("CMAKE_PREFIX_PATH");
   if (env) {
     std::string env_catkin_prefix_paths(env);
@@ -72,6 +74,7 @@ std::vector<std::string> catkinFindLib() {
       lib_paths.push_back((path / lib).string());
     }
   }
+#endif
   return lib_paths;
 }
 
@@ -89,6 +92,7 @@ namespace pluginlib
   /***************************************************************************/
   {
     CONSOLE_BRIDGE_logDebug("pluginlib.ClassLoader Creating ClassLoader, base = %s, address = %p", base_class.c_str(), this);
+    CONSOLE_BRIDGE_logDebug("pluginlib.ClassLoader Creating ClassLoader, package = %s attrib_name=%s", package.c_str(), attrib_name.c_str());
     //if (ros::package::getPath(package_).empty())
     //{
       //throw pluginlib::ClassLoaderException("Unable to find package: " + package_);
@@ -142,11 +146,15 @@ namespace pluginlib
   std::shared_ptr<T> ClassLoader<T>::createInstance(const std::string& lookup_name)
   /***************************************************************************/
   {
-    CONSOLE_BRIDGE_logDebug("pluginlib.ClassLoader Attempting to create managed instance for class %s.", lookup_name.c_str());
+    CONSOLE_BRIDGE_logDebug("pluginlib.ClassLoader Attempting to create managed instance for class %s.",
+                            lookup_name.c_str());
 
     if (!isClassLoaded(lookup_name))
+    {
+      CONSOLE_BRIDGE_logDebug("222");
       loadLibraryForClass(lookup_name);
-
+    }
+    CONSOLE_BRIDGE_logDebug("333");
     try
     {
       std::string class_type = getClassType(lookup_name);
@@ -226,6 +234,7 @@ namespace pluginlib
   {
     //Pull possible files from manifests of packages which depend on this package and export class
     std::vector<std::string> paths;
+    paths.push_back("/media/sda1/kdl_kinematics_plugin_description.xml");
     //ros::package::getPlugins(package, attrib_name, paths, force_recrawl);
     return paths;
   }
@@ -368,6 +377,7 @@ namespace pluginlib
     std::string library_name = it->second.library_name_;
     CONSOLE_BRIDGE_logDebug("pluginlib.ClassLoader Class %s maps to library %s in classes_available_.", lookup_name.c_str(), library_name.c_str());
 
+    CONSOLE_BRIDGE_logDebug("package_=%s", it->second.package_.c_str());
     std::vector<std::string> paths_to_try = getAllLibraryPathsToTry(library_name, it->second.package_);
 
     CONSOLE_BRIDGE_logDebug("pluginlib.ClassLoader Iterating through all possible paths where %s could be located...", library_name.c_str());
@@ -556,8 +566,9 @@ namespace pluginlib
       throw pluginlib::LibraryLoadException(getErrorStringForUnknownClass(lookup_name));
     }
 
-    std::string library_path = getClassLibraryPath(lookup_name);
-    if (library_path == "")
+    //std::string library_path = getClassLibraryPath(lookup_name);
+      std::string library_path = "/media/ram/user_lib/libmoveit_kdl_kinematics_plugin.so";
+      if (library_path == "")
     {
       CONSOLE_BRIDGE_logDebug("pluginlib.ClassLoader No path could be found to the library containing %s.", lookup_name.c_str());
       std::ostringstream error_msg;
@@ -650,6 +661,7 @@ namespace pluginlib
         if(base_class_type == base_class_){
 
           // register class here
+            CONSOLE_BRIDGE_logDebug("hhhhhhhhh");
           TiXmlElement* description = class_element->FirstChildElement("description");
           std::string description_str;
           if (description)

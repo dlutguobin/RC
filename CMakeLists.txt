@@ -30,6 +30,7 @@ include_directories(
     eigen_conversions/include
     rostime/include
     profiler/include
+    kdl_kinematics_plugin/include
     #tf/include/
     #tf2/include/
   )
@@ -63,11 +64,12 @@ add_subdirectory(geometric_shapes)
 add_subdirectory(eigen_conversions)
 add_subdirectory(rostime)
 add_subdirectory(profiler)
+add_subdirectory(kdl_kinematics_plugin)
 
 #add_subdirectory(tf)
 #add_subdirectory(tf2)
 
 add_executable(model_test kinematic_model.cpp)
-target_link_libraries(model_test tinyxml console_bridge moveit_robot_model_loader moveit_robot_model moveit_robot_state
-        urdfdom_model urdfdom_world)
+target_link_libraries(model_test tinyxml  moveit_robot_model_loader moveit_robot_model moveit_robot_state
+        urdfdom_model urdfdom_world moveit_kdl_kinematics_plugin kdl_parser console_bridge)
 

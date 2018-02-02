@@ -289,30 +289,15 @@ kinematics_plugin_loader::KinematicsPluginLoader::getLoaderFunction(const srdf::
       {
         CONSOLE_BRIDGE_logDebug("Loading settings for kinematics solvers from the ROS param server ...");
 
-#if 0
-        // read data using ROS params
-        ros::NodeHandle nh("~");
+#if 1
 
         // read the list of plugin names for possible kinematics solvers
         for (std::size_t i = 0; i < known_groups.size(); ++i)
         {
-          std::string base_param_name = known_groups[i].name_;
-          CONSOLE_BRIDGE_logDebug_NAMED("kinematics_plugin_loader", "Looking for param %s ",
-                          (base_param_name + "/kinematics_solver").c_str());
-          std::string ksolver_param_name;
-          bool found = nh.searchParam(base_param_name + "/kinematics_solver", ksolver_param_name);
-          if (!found || !nh.hasParam(ksolver_param_name))
-          {
-            base_param_name = robot_description_ + "_kinematics/" + known_groups[i].name_;
-            CONSOLE_BRIDGE_logDebug_NAMED("kinematics_plugin_loader", "Looking for param %s ",
-                            (base_param_name + "/kinematics_solver").c_str());
-            found = nh.searchParam(base_param_name + "/kinematics_solver", ksolver_param_name);
-          }
-          if (found)
-          {
-            CONSOLE_BRIDGE_logDebug("Found param %s", ksolver_param_name.c_str());
-            std::string ksolver;
-            if (nh.getParam(ksolver_param_name, ksolver))
+
+          std::string ksolver("kdl_kinematics_plugin/KDLKinematicsPlugin");
+
+            if (1)
             {
               std::stringstream ss(ksolver);
               bool first = true;
@@ -330,99 +315,16 @@ kinematics_plugin_loader::KinematicsPluginLoader::getLoaderFunction(const srdf::
                                 solver.c_str(), known_groups[i].name_.c_str());
               }
             }
-          }
 
-          std::string ksolver_timeout_param_name;
-          if (nh.searchParam(base_param_name + "/kinematics_solver_timeout", ksolver_timeout_param_name))
-          {
-            double ksolver_timeout;
-            if (nh.getParam(ksolver_timeout_param_name, ksolver_timeout))
-              ik_timeout_[known_groups[i].name_] = ksolver_timeout;
-            else
-            {  // just in case this is an int
-              int ksolver_timeout_i;
-              if (nh.getParam(ksolver_timeout_param_name, ksolver_timeout_i))
-                ik_timeout_[known_groups[i].name_] = ksolver_timeout_i;
-            }
-          }
 
-          std::string ksolver_attempts_param_name;
-          if (nh.searchParam(base_param_name + "/kinematics_solver_attempts", ksolver_attempts_param_name))
-          {
-            int ksolver_attempts;
-            if (nh.getParam(ksolver_attempts_param_name, ksolver_attempts))
-              ik_attempts_[known_groups[i].name_] = ksolver_attempts;
-          }
+            double ksolver_timeout = 0.1;
+            ik_timeout_[known_groups[i].name_] = ksolver_timeout;
 
-          std::string ksolver_res_param_name;
-          if (nh.searchParam(base_param_name + "/kinematics_solver_search_resolution", ksolver_res_param_name))
-          {
-            std::string ksolver_res;
-            if (nh.getParam(ksolver_res_param_name, ksolver_res))
-            {
-              std::stringstream ss(ksolver_res);
-              while (ss.good() && !ss.eof())
-              {
-                double res;
-                ss >> res >> std::ws;
-                search_res[known_groups[i].name_].push_back(res);
-              }
-            }
-            else
-            {  // handle the case this param is just one value and parsed as a double
-              double res;
-              if (nh.getParam(ksolver_res_param_name, res))
-                search_res[known_groups[i].name_].push_back(res);
-              else
-              {
-                int res_i;
-                if (nh.getParam(ksolver_res_param_name, res_i))
-                  search_res[known_groups[i].name_].push_back(res_i);
-              }
-            }
-          }
+            int ksolver_attempts = 3;
+            ik_attempts_[known_groups[i].name_] = ksolver_attempts;
 
-          // Allow a kinematic solver's tip link to be specified on the rosparam server
-          // Depreciated in favor of array version now
-          std::string ksolver_ik_link_param_name;
-          if (nh.searchParam(base_param_name + "/kinematics_solver_ik_link", ksolver_ik_link_param_name))
-          {
-            std::string ksolver_ik_link;
-            if (nh.getParam(ksolver_ik_link_param_name, ksolver_ik_link))  // has a custom rosparam-based tip link
-            {
-              ROS_WARN_STREAM_NAMED("kinematics_plugin_loader", "Using kinematics_solver_ik_link rosparam is "
-                                                                "deprecated in favor of kinematics_solver_ik_links "
-                                                                "rosparam array.");
-              iksolver_to_tip_links[known_groups[i].name_].push_back(ksolver_ik_link);
-            }
-          }
-
-          // Allow a kinematic solver's tip links to be specified on the rosparam server as an array
-          std::string ksolver_ik_links_param_name;
-          if (nh.searchParam(base_param_name + "/kinematics_solver_ik_links", ksolver_ik_links_param_name))
-          {
-            XmlRpc::XmlRpcValue ksolver_ik_links;
-            if (nh.getParam(ksolver_ik_links_param_name, ksolver_ik_links))  // has custom rosparam-based tip link(s)
-            {
-              if (ksolver_ik_links.getType() != XmlRpc::XmlRpcValue::TypeArray)
-              {
-                ROS_WARN_STREAM_NAMED("kinematics_plugin_loader", "rosparam '"
-                                                                      << ksolver_ik_links_param_name
-                                                                      << "' should be an XmlRpc value type 'Array'");
-              }
-              else
-              {
-                for (int32_t j = 0; j < ksolver_ik_links.size(); ++j)
-                {
-                  ROS_ASSERT(ksolver_ik_links[j].getType() == XmlRpc::XmlRpcValue::TypeString);
-                  CONSOLE_BRIDGE_logDebug_STREAM_NAMED("kinematics_plugin_loader",
-                                         "found tip " << static_cast<std::string>(ksolver_ik_links[j]) << " for group "
-                                                      << known_groups[i].name_);
-                  iksolver_to_tip_links[known_groups[i].name_].push_back(static_cast<std::string>(ksolver_ik_links[j]));
-                }
-              }
-            }
-          }
+            double res = 0.01;
+            search_res[known_groups[i].name_].push_back(res);
 
           // make sure there is a default resolution at least specified for every solver (in case it was not specified
           // on the param server)
