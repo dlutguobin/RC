@@ -17,7 +17,7 @@ add_library(${MOVEIT_LIB_NAME}
   )
 #set_target_properties(${MOVEIT_LIB_NAME} PROPERTIES VERSION ${${PROJECT_NAME}_VERSION})
 
-target_link_libraries(${MOVEIT_LIB_NAME}  geometric_shapes random_numbers moveit_exceptions moveit_kinematics_base console_bridge  ${Boost_LIBRARIES})
+target_link_libraries(${MOVEIT_LIB_NAME} moveit_profiler geometric_shapes random_numbers moveit_exceptions moveit_kinematics_base console_bridge  ${Boost_LIBRARIES})
 #add_dependencies(${MOVEIT_LIB_NAME} ${catkin_EXPORTED_TARGETS})
 
 #if(CATKIN_ENABLE_TESTING)

@@ -1,2 +1,0 @@
-Options: 
-CMake: 2.8.12.2@/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/cmake

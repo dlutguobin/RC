@@ -10,9 +10,19 @@
 --   Found Poco!
 -- components found: Foundation.
 -- Boost version: 1.58.0
+--- resource_retriever
+-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.47.0") 
+-- Boost version: 1.58.0
 -- Found the following Boost libraries:
 --   system
 --   filesystem
+-- Boost version: 1.58.0
+-- Found the following Boost libraries:
+--   system
+--   filesystem
+--   date_time
+--   thread
+--   serialization
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/siasun/urdf/cmake-build-release

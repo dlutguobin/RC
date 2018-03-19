@@ -31,6 +31,10 @@ include_directories(
     rostime/include
     profiler/include
     kdl_kinematics_plugin/include
+    constraint_samplers/include
+    constraint_sampler_manager_loader/include
+    resource_retriever/include
+
     #tf/include/
     #tf2/include/
   )
@@ -60,11 +64,16 @@ add_subdirectory(planning_request_adapter)
 add_subdirectory(rdf_loader)
 add_subdirectory(robot_model_loader)
 add_subdirectory(kinematics_plugin_loader)
+add_subdirectory(resource_retriever)
 add_subdirectory(geometric_shapes)
 add_subdirectory(eigen_conversions)
 add_subdirectory(rostime)
 add_subdirectory(profiler)
 add_subdirectory(kdl_kinematics_plugin)
+add_subdirectory(constraint_samplers)
+add_subdirectory(ompl)
+add_subdirectory(constraint_sampler_manager_loader)
+
 
 #add_subdirectory(tf)
 #add_subdirectory(tf2)
@@ -72,4 +81,10 @@ add_subdirectory(kdl_kinematics_plugin)
 add_executable(model_test kinematic_model.cpp)
 target_link_libraries(model_test tinyxml  moveit_robot_model_loader moveit_robot_model moveit_robot_state
         urdfdom_model urdfdom_world moveit_kdl_kinematics_plugin kdl_parser console_bridge)
+
+add_executable(planner_test motion_planning.cpp)
+target_link_libraries(planner_test tinyxml  moveit_robot_model_loader moveit_robot_model moveit_robot_state
+        urdfdom_model urdfdom_world  kdl_parser console_bridge moveit_collision_detection
+        moveit_planning_scene moveit_planning_interface moveit_ompl_planner_plugin moveit_ompl_interface
+        geometric_shapes)
 

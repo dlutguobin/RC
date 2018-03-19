@@ -15,6 +15,9 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/siasun/urdf/cmake-build-release/urdf/CMakeFiles/urdf.dir/DependInfo.cmake"
+  "/home/siasun/urdf/cmake-build-release/srdfdom/CMakeFiles/srdfdom.dir/DependInfo.cmake"
+  "/home/siasun/urdf/cmake-build-release/urdf/CMakeFiles/urdfdom_model.dir/DependInfo.cmake"
   )
 
 # The include file search paths:
@@ -42,6 +45,13 @@ SET(CMAKE_C_TARGET_INCLUDE_PATH
   "../kinematics_plugin_loader/include"
   "../pluginlib/include"
   "../geometric_shapes/include"
+  "../eigen_conversions/include"
+  "../rostime/include"
+  "../profiler/include"
+  "../kdl_kinematics_plugin/include"
+  "../constraint_samplers/include"
+  "../constraint_sampler_manager_loader/include"
+  "../resource_retriever/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

@@ -112,6 +112,19 @@ model_test/fast:
 .PHONY : model_test/fast
 
 #=============================================================================
+# Target rules for targets named planner_test
+
+# Build rule for target.
+planner_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 planner_test
+.PHONY : planner_test
+
+# fast build rule for target.
+planner_test/fast:
+	$(MAKE) -f CMakeFiles/planner_test.dir/build.make CMakeFiles/planner_test.dir/build
+.PHONY : planner_test/fast
+
+#=============================================================================
 # Target rules for targets named check_urdf
 
 # Build rule for target.
@@ -554,6 +567,19 @@ moveit_kinematics_plugin_loader/fast:
 .PHONY : moveit_kinematics_plugin_loader/fast
 
 #=============================================================================
+# Target rules for targets named resource_retriever
+
+# Build rule for target.
+resource_retriever: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 resource_retriever
+.PHONY : resource_retriever
+
+# fast build rule for target.
+resource_retriever/fast:
+	$(MAKE) -f resource_retriever/CMakeFiles/resource_retriever.dir/build.make resource_retriever/CMakeFiles/resource_retriever.dir/build
+.PHONY : resource_retriever/fast
+
+#=============================================================================
 # Target rules for targets named geometric_shapes
 
 # Build rule for target.
@@ -565,6 +591,110 @@ geometric_shapes: cmake_check_build_system
 geometric_shapes/fast:
 	$(MAKE) -f geometric_shapes/CMakeFiles/geometric_shapes.dir/build.make geometric_shapes/CMakeFiles/geometric_shapes.dir/build
 .PHONY : geometric_shapes/fast
+
+#=============================================================================
+# Target rules for targets named eigen_conversions
+
+# Build rule for target.
+eigen_conversions: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 eigen_conversions
+.PHONY : eigen_conversions
+
+# fast build rule for target.
+eigen_conversions/fast:
+	$(MAKE) -f eigen_conversions/CMakeFiles/eigen_conversions.dir/build.make eigen_conversions/CMakeFiles/eigen_conversions.dir/build
+.PHONY : eigen_conversions/fast
+
+#=============================================================================
+# Target rules for targets named rostime
+
+# Build rule for target.
+rostime: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rostime
+.PHONY : rostime
+
+# fast build rule for target.
+rostime/fast:
+	$(MAKE) -f rostime/CMakeFiles/rostime.dir/build.make rostime/CMakeFiles/rostime.dir/build
+.PHONY : rostime/fast
+
+#=============================================================================
+# Target rules for targets named moveit_profiler
+
+# Build rule for target.
+moveit_profiler: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 moveit_profiler
+.PHONY : moveit_profiler
+
+# fast build rule for target.
+moveit_profiler/fast:
+	$(MAKE) -f profiler/CMakeFiles/moveit_profiler.dir/build.make profiler/CMakeFiles/moveit_profiler.dir/build
+.PHONY : moveit_profiler/fast
+
+#=============================================================================
+# Target rules for targets named moveit_kdl_kinematics_plugin
+
+# Build rule for target.
+moveit_kdl_kinematics_plugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 moveit_kdl_kinematics_plugin
+.PHONY : moveit_kdl_kinematics_plugin
+
+# fast build rule for target.
+moveit_kdl_kinematics_plugin/fast:
+	$(MAKE) -f kdl_kinematics_plugin/CMakeFiles/moveit_kdl_kinematics_plugin.dir/build.make kdl_kinematics_plugin/CMakeFiles/moveit_kdl_kinematics_plugin.dir/build
+.PHONY : moveit_kdl_kinematics_plugin/fast
+
+#=============================================================================
+# Target rules for targets named moveit_constraint_samplers
+
+# Build rule for target.
+moveit_constraint_samplers: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 moveit_constraint_samplers
+.PHONY : moveit_constraint_samplers
+
+# fast build rule for target.
+moveit_constraint_samplers/fast:
+	$(MAKE) -f constraint_samplers/CMakeFiles/moveit_constraint_samplers.dir/build.make constraint_samplers/CMakeFiles/moveit_constraint_samplers.dir/build
+.PHONY : moveit_constraint_samplers/fast
+
+#=============================================================================
+# Target rules for targets named moveit_ompl_interface
+
+# Build rule for target.
+moveit_ompl_interface: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 moveit_ompl_interface
+.PHONY : moveit_ompl_interface
+
+# fast build rule for target.
+moveit_ompl_interface/fast:
+	$(MAKE) -f ompl/ompl_interface/CMakeFiles/moveit_ompl_interface.dir/build.make ompl/ompl_interface/CMakeFiles/moveit_ompl_interface.dir/build
+.PHONY : moveit_ompl_interface/fast
+
+#=============================================================================
+# Target rules for targets named moveit_ompl_planner_plugin
+
+# Build rule for target.
+moveit_ompl_planner_plugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 moveit_ompl_planner_plugin
+.PHONY : moveit_ompl_planner_plugin
+
+# fast build rule for target.
+moveit_ompl_planner_plugin/fast:
+	$(MAKE) -f ompl/ompl_interface/CMakeFiles/moveit_ompl_planner_plugin.dir/build.make ompl/ompl_interface/CMakeFiles/moveit_ompl_planner_plugin.dir/build
+.PHONY : moveit_ompl_planner_plugin/fast
+
+#=============================================================================
+# Target rules for targets named moveit_constraint_sampler_manager_loader
+
+# Build rule for target.
+moveit_constraint_sampler_manager_loader: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 moveit_constraint_sampler_manager_loader
+.PHONY : moveit_constraint_sampler_manager_loader
+
+# fast build rule for target.
+moveit_constraint_sampler_manager_loader/fast:
+	$(MAKE) -f constraint_sampler_manager_loader/CMakeFiles/moveit_constraint_sampler_manager_loader.dir/build.make constraint_sampler_manager_loader/CMakeFiles/moveit_constraint_sampler_manager_loader.dir/build
+.PHONY : moveit_constraint_sampler_manager_loader/fast
 
 kinematic_model.o: kinematic_model.cpp.o
 .PHONY : kinematic_model.o
@@ -590,6 +720,30 @@ kinematic_model.cpp.s:
 	$(MAKE) -f CMakeFiles/model_test.dir/build.make CMakeFiles/model_test.dir/kinematic_model.cpp.s
 .PHONY : kinematic_model.cpp.s
 
+motion_planning.o: motion_planning.cpp.o
+.PHONY : motion_planning.o
+
+# target to build an object file
+motion_planning.cpp.o:
+	$(MAKE) -f CMakeFiles/planner_test.dir/build.make CMakeFiles/planner_test.dir/motion_planning.cpp.o
+.PHONY : motion_planning.cpp.o
+
+motion_planning.i: motion_planning.cpp.i
+.PHONY : motion_planning.i
+
+# target to preprocess a source file
+motion_planning.cpp.i:
+	$(MAKE) -f CMakeFiles/planner_test.dir/build.make CMakeFiles/planner_test.dir/motion_planning.cpp.i
+.PHONY : motion_planning.cpp.i
+
+motion_planning.s: motion_planning.cpp.s
+.PHONY : motion_planning.s
+
+# target to generate assembly for a file
+motion_planning.cpp.s:
+	$(MAKE) -f CMakeFiles/planner_test.dir/build.make CMakeFiles/planner_test.dir/motion_planning.cpp.s
+.PHONY : motion_planning.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -598,6 +752,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... model_test"
+	@echo "... planner_test"
 	@echo "... rebuild_cache"
 	@echo "... check_urdf"
 	@echo "... kdl_parser"
@@ -633,10 +788,22 @@ help:
 	@echo "... moveit_rdf_loader"
 	@echo "... moveit_robot_model_loader"
 	@echo "... moveit_kinematics_plugin_loader"
+	@echo "... resource_retriever"
 	@echo "... geometric_shapes"
+	@echo "... eigen_conversions"
+	@echo "... rostime"
+	@echo "... moveit_profiler"
+	@echo "... moveit_kdl_kinematics_plugin"
+	@echo "... moveit_constraint_samplers"
+	@echo "... moveit_ompl_interface"
+	@echo "... moveit_ompl_planner_plugin"
+	@echo "... moveit_constraint_sampler_manager_loader"
 	@echo "... kinematic_model.o"
 	@echo "... kinematic_model.i"
 	@echo "... kinematic_model.s"
+	@echo "... motion_planning.o"
+	@echo "... motion_planning.i"
+	@echo "... motion_planning.s"
 .PHONY : help
 
 

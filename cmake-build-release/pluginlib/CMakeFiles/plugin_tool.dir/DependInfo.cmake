@@ -42,6 +42,13 @@ SET(CMAKE_C_TARGET_INCLUDE_PATH
   "../kinematics_plugin_loader/include"
   "../pluginlib/include"
   "../geometric_shapes/include"
+  "../eigen_conversions/include"
+  "../rostime/include"
+  "../profiler/include"
+  "../kdl_kinematics_plugin/include"
+  "../constraint_samplers/include"
+  "../constraint_sampler_manager_loader/include"
+  "../resource_retriever/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

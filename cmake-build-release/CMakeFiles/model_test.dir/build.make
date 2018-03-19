@@ -86,13 +86,31 @@ model_test: robot_model/libmoveit_robot_model.a
 model_test: robot_state/libmoveit_robot_state.a
 model_test: urdf/liburdfdom_model.so
 model_test: urdf/liburdfdom_world.so
+model_test: kdl_kinematics_plugin/libmoveit_kdl_kinematics_plugin.so
+model_test: urdf/libkdl_parser.so
 model_test: kinematics_plugin_loader/libmoveit_kinematics_plugin_loader.a
-model_test: rdf_loader/libmoveit_rdf_loader.a
+model_test: class_loader/libclass_loader.so
+model_test: /usr/lib/libPocoFoundation.so
 model_test: robot_model/libmoveit_robot_model.a
+model_test: profiler/libmoveit_profiler.a
+model_test: geometric_shapes/libgeometric_shapes.a
+model_test: resource_retriever/libresource_retriever.a
+model_test: /usr/lib/x86_64-linux-gnu/libcurl.so
+model_test: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+model_test: random_numbers/librandom_numbers.a
+model_test: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+model_test: /usr/lib/x86_64-linux-gnu/libboost_system.so
+model_test: /usr/lib/x86_64-linux-gnu/libboost_thread.so
 model_test: exceptions/libmoveit_exceptions.a
 model_test: kinematics_base/libmoveit_kinematics_base.a
 model_test: urdf/liburdfdom.so
 model_test: transforms/libmoveit_transforms.a
+model_test: eigen_conversions/libeigen_conversions.a
+model_test: rostime/librostime.a
+model_test: rdf_loader/libmoveit_rdf_loader.a
+model_test: srdfdom/libsrdfdom.a
+model_test: urdf/liburdf.so
+model_test: urdf/liburdfdom_model.so
 model_test: CMakeFiles/model_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable model_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/model_test.dir/link.txt --verbose=$(VERBOSE)

@@ -151,8 +151,8 @@ bool KDLKinematicsPlugin::initialize(const std::string& robot_description, const
 //  rdf_loader::RDFLoader rdf_loader(robot_description_);
 //  const srdf::ModelSharedPtr& srdf = rdf_loader.getSRDF();
 //  const urdf::ModelInterfaceSharedPtr& urdf_model = rdf_loader.getURDF();
-    std::string urdf_file("srcz.urdf");
-    std::string srdf_file("srcz.srdf");
+    std::string urdf_file("pr2.urdf");
+    std::string srdf_file("pr2.srdf");
     auto umodel = new urdf::Model();
     umodel->initFile(urdf_file);
     auto urdf_model = std::make_shared<urdf::ModelInterface>();

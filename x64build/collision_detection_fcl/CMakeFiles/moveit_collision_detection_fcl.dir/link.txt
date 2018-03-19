@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmoveit_collision_detection_fcl.a  CMakeFiles/moveit_collision_detection_fcl.dir/src/collision_common.cpp.o CMakeFiles/moveit_collision_detection_fcl.dir/src/collision_robot_fcl.cpp.o CMakeFiles/moveit_collision_detection_fcl.dir/src/collision_world_fcl.cpp.o
+/usr/bin/ranlib libmoveit_collision_detection_fcl.a

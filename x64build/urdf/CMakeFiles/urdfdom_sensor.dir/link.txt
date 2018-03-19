@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -std=c++0x   -shared -Wl,-soname,liburdfdom_sensor.so -o liburdfdom_sensor.so CMakeFiles/urdfdom_sensor.dir/src/urdf_parser/urdf_sensor.cpp.o  -L/home/siasun/urdf/urdf/lib liburdfdom_model.so -ltinyxml -lconsole_bridge -Wl,-rpath,/home/siasun/urdf/urdf/lib:/home/siasun/urdf/x64build/urdf 

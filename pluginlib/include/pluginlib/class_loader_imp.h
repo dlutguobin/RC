@@ -235,6 +235,7 @@ namespace pluginlib
     //Pull possible files from manifests of packages which depend on this package and export class
     std::vector<std::string> paths;
     paths.push_back("/media/sda1/kdl_kinematics_plugin_description.xml");
+    //paths.push_back("/media/sda1/ompl_interface_plugin_description.xml");
     //ros::package::getPlugins(package, attrib_name, paths, force_recrawl);
     return paths;
   }
@@ -567,7 +568,8 @@ namespace pluginlib
     }
 
     //std::string library_path = getClassLibraryPath(lookup_name);
-      std::string library_path = "/media/ram/user_lib/libmoveit_kdl_kinematics_plugin.so";
+    std::string library_path = "/media/ram/user_lib/libmoveit_kdl_kinematics_plugin.so";
+    //std::string library_path = "/media/ram/user_lib/libmoveit_ompl_interface.so";
       if (library_path == "")
     {
       CONSOLE_BRIDGE_logDebug("pluginlib.ClassLoader No path could be found to the library containing %s.", lookup_name.c_str());

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../exceptions/include/moveit/exceptions/exceptions.h
+stdexcept
+-
+
+../urdf/include/console_bridge/console.h
+string
+-
+console_bridge_export.h
+../urdf/include/console_bridge/console_bridge_export.h
+
+../urdf/include/console_bridge/console_bridge_export.h
+
+/home/siasun/urdf/exceptions/src/exceptions.cpp
+moveit/exceptions/exceptions.h
+-
+console_bridge/console.h
+-
+

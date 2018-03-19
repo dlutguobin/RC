@@ -36,7 +36,8 @@
 
 #include <moveit/kinematics_plugin_loader/kinematics_plugin_loader.h>
 #include <moveit/rdf_loader/rdf_loader.h>
-#include <pluginlib/class_loader.h>
+//#include <pluginlib/class_loader.h>
+#include <class_loader/multi_library_class_loader.h>
 #include <boost/thread/mutex.hpp>
 #include <sstream>
 #include <vector>
@@ -44,7 +45,7 @@
 #include <memory>
 //#include <ros/ros.h>
 //#include <moveit/profiler/profiler.h>
-
+const char KINEMATIC_LIBRARY[] = "libmoveit_kdl_kinematics_plugin.so";
 namespace kinematics_plugin_loader
 {
 class KinematicsPluginLoader::KinematicsLoaderImpl
@@ -68,10 +69,10 @@ public:
   {
     try
     {
-      kinematics_loader_.reset(new pluginlib::ClassLoader<kinematics::KinematicsBase>("moveit_core", "kinematics::"
-                                                                                                     "KinematicsBase"));
+      kinematics_loader_.reset(new class_loader::MultiLibraryClassLoader(true));
+      kinematics_loader_->loadLibrary(KINEMATIC_LIBRARY);
     }
-    catch (pluginlib::PluginlibException& e)
+    catch (class_loader::ClassLoaderException & e)
     {
       CONSOLE_BRIDGE_logError("Unable to construct kinematics loader. Error: %s", e.what());
     }
@@ -144,7 +145,9 @@ public:
           try
           {
             //result = kinematics_loader_->createUniqueInstance(it->second[i]);
-            result = kinematics_loader_->createInstance(it->second[i]);
+            CONSOLE_BRIDGE_logDebug("kinematic plugin name is %s", it->second[i].c_str());
+            result = kinematics_loader_->createInstance<kinematics::KinematicsBase>
+                    ("kdl_kinematics_plugin::KDLKinematicsPlugin");
             if (result)
             {
               const std::vector<const robot_model::LinkModel*>& links = jmg->getLinkModels();
@@ -180,7 +183,7 @@ public:
                 CONSOLE_BRIDGE_logError("No links specified for group '%s'", jmg->getName().c_str());
             }
           }
-          catch (pluginlib::PluginlibException& e)
+          catch (class_loader::ClassLoaderException & e)
           {
             CONSOLE_BRIDGE_logError("The kinematics plugin (%s) failed to load. Error: %s", it->first.c_str(), e.what());
           }
@@ -236,7 +239,8 @@ private:
   std::map<std::string, std::vector<double> > search_res_;
   std::map<std::string, std::vector<std::string> > iksolver_to_tip_links_;  // a map between each ik solver and a vector
                                                                             // of custom-specified tip link(s)
-  std::shared_ptr<pluginlib::ClassLoader<kinematics::KinematicsBase> > kinematics_loader_;
+  //std::shared_ptr<pluginlib::ClassLoader<kinematics::KinematicsBase> > kinematics_loader_;
+  std::shared_ptr<class_loader::MultiLibraryClassLoader> kinematics_loader_;
   std::map<const robot_model::JointModelGroup*, std::vector<kinematics::KinematicsBasePtr> > instances_;
   boost::mutex lock_;
 };

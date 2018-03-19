@@ -24,8 +24,14 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/siasun/urdf/cmake-build-release/robot_trajectory/CMakeFiles/moveit_robot_trajectory.dir/DependInfo.cmake"
   "/home/siasun/urdf/cmake-build-release/trajectory_processing/CMakeFiles/moveit_trajectory_processing.dir/DependInfo.cmake"
   "/home/siasun/urdf/cmake-build-release/collision_detection/CMakeFiles/moveit_collision_detection.dir/DependInfo.cmake"
+  "/home/siasun/urdf/cmake-build-release/profiler/CMakeFiles/moveit_profiler.dir/DependInfo.cmake"
+  "/home/siasun/urdf/cmake-build-release/geometric_shapes/CMakeFiles/geometric_shapes.dir/DependInfo.cmake"
+  "/home/siasun/urdf/cmake-build-release/resource_retriever/CMakeFiles/resource_retriever.dir/DependInfo.cmake"
+  "/home/siasun/urdf/cmake-build-release/random_numbers/CMakeFiles/random_numbers.dir/DependInfo.cmake"
   "/home/siasun/urdf/cmake-build-release/kinematics_base/CMakeFiles/moveit_kinematics_base.dir/DependInfo.cmake"
   "/home/siasun/urdf/cmake-build-release/urdf/CMakeFiles/urdfdom.dir/DependInfo.cmake"
+  "/home/siasun/urdf/cmake-build-release/eigen_conversions/CMakeFiles/eigen_conversions.dir/DependInfo.cmake"
+  "/home/siasun/urdf/cmake-build-release/rostime/CMakeFiles/rostime.dir/DependInfo.cmake"
   )
 
 # The include file search paths:
@@ -53,6 +59,13 @@ SET(CMAKE_C_TARGET_INCLUDE_PATH
   "../kinematics_plugin_loader/include"
   "../pluginlib/include"
   "../geometric_shapes/include"
+  "../eigen_conversions/include"
+  "../rostime/include"
+  "../profiler/include"
+  "../kdl_kinematics_plugin/include"
+  "../constraint_samplers/include"
+  "../constraint_sampler_manager_loader/include"
+  "../resource_retriever/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

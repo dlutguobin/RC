@@ -1,2 +1,0 @@
-/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-ar cr libsrdfdom.a  CMakeFiles/srdfdom.dir/src/model.cpp.o CMakeFiles/srdfdom.dir/src/srdf_writer.cpp.o
-/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-ranlib libsrdfdom.a

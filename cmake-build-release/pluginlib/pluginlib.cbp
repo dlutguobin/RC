@@ -5,7 +5,7 @@
       <Option title="pluginlib" />
       <Option makefile_is_custom="1" />
       <Option compiler="gcc" />
-      <Option virtualFolders="CMake Files\;CMake Files\urdf\;CMake Files\urdf\test\;CMake Files\random_numbers\;CMake Files\srdfdom\;CMake Files\robot_model\;CMake Files\exceptions\;CMake Files\kinematics_base\;CMake Files\robot_state\;CMake Files\transforms\;CMake Files\collision_detection\;CMake Files\collision_detection_fcl\;CMake Files\kinematic_constraints\;CMake Files\robot_trajectory\;CMake Files\trajectory_processing\;CMake Files\planning_scene\;CMake Files\class_loader\;CMake Files\class_loader\cmake\;CMake Files\pluginlib\;CMake Files\planning_interface\;CMake Files\planning_request_adapter\;CMake Files\rdf_loader\;CMake Files\robot_model_loader\;CMake Files\kinematics_plugin_loader\;CMake Files\geometric_shapes\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\usr\;CMake Files\..\..\..\usr\lib\;CMake Files\..\..\..\usr\lib\cmake\;CMake Files\..\..\..\usr\lib\cmake\eigen3\;CMake Files\..\..\..\opt\;CMake Files\..\..\..\opt\ros\;CMake Files\..\..\..\opt\ros\kinetic\;CMake Files\..\..\..\opt\ros\kinetic\share\;CMake Files\..\..\..\opt\ros\kinetic\share\octomap\;" />
+      <Option virtualFolders="CMake Files\;CMake Files\urdf\;CMake Files\urdf\test\;CMake Files\random_numbers\;CMake Files\srdfdom\;CMake Files\robot_model\;CMake Files\exceptions\;CMake Files\kinematics_base\;CMake Files\robot_state\;CMake Files\transforms\;CMake Files\collision_detection\;CMake Files\collision_detection_fcl\;CMake Files\kinematic_constraints\;CMake Files\robot_trajectory\;CMake Files\trajectory_processing\;CMake Files\planning_scene\;CMake Files\class_loader\;CMake Files\class_loader\cmake\;CMake Files\pluginlib\;CMake Files\planning_interface\;CMake Files\planning_request_adapter\;CMake Files\rdf_loader\;CMake Files\robot_model_loader\;CMake Files\kinematics_plugin_loader\;CMake Files\resource_retriever\;CMake Files\geometric_shapes\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\usr\;CMake Files\..\..\..\usr\lib\;CMake Files\..\..\..\usr\lib\cmake\;CMake Files\..\..\..\usr\lib\cmake\eigen3\;CMake Files\..\..\..\usr\local\;CMake Files\..\..\..\usr\local\share\;CMake Files\..\..\..\usr\local\share\octomap\;CMake Files\eigen_conversions\;CMake Files\rostime\;CMake Files\profiler\;CMake Files\kdl_kinematics_plugin\;CMake Files\constraint_samplers\;CMake Files\ompl\;CMake Files\ompl\ompl_interface\;CMake Files\constraint_sampler_manager_loader\;" />
       <Build>
       <Target title="all">
          <Option working_dir="/home/siasun/urdf/cmake-build-release/pluginlib" />
@@ -28,9 +28,13 @@
             <Add directory="/home/siasun/urdf/class_loader/include" />
             <Add directory="/home/siasun/urdf/collision_detection/include" />
             <Add directory="/home/siasun/urdf/collision_detection_fcl/include" />
+            <Add directory="/home/siasun/urdf/constraint_sampler_manager_loader/include" />
+            <Add directory="/home/siasun/urdf/constraint_samplers/include" />
+            <Add directory="/home/siasun/urdf/eigen_conversions/include" />
             <Add directory="/home/siasun/urdf/exceptions/include" />
             <Add directory="/home/siasun/urdf/geometric_shapes/include" />
             <Add directory="/home/siasun/urdf/include" />
+            <Add directory="/home/siasun/urdf/kdl_kinematics_plugin/include" />
             <Add directory="/home/siasun/urdf/kinematic_constraints/include" />
             <Add directory="/home/siasun/urdf/kinematics_base/include" />
             <Add directory="/home/siasun/urdf/kinematics_plugin_loader/include" />
@@ -38,12 +42,15 @@
             <Add directory="/home/siasun/urdf/planning_request_adapter/include" />
             <Add directory="/home/siasun/urdf/planning_scene/include" />
             <Add directory="/home/siasun/urdf/pluginlib/include" />
+            <Add directory="/home/siasun/urdf/profiler/include" />
             <Add directory="/home/siasun/urdf/random_numbers/include" />
             <Add directory="/home/siasun/urdf/rdf_loader/include" />
+            <Add directory="/home/siasun/urdf/resource_retriever/include" />
             <Add directory="/home/siasun/urdf/robot_model/include" />
             <Add directory="/home/siasun/urdf/robot_model_loader/include" />
             <Add directory="/home/siasun/urdf/robot_state/include" />
             <Add directory="/home/siasun/urdf/robot_trajectory/include" />
+            <Add directory="/home/siasun/urdf/rostime/include" />
             <Add directory="/home/siasun/urdf/srdfdom/include" />
             <Add directory="/home/siasun/urdf/trajectory_processing/include" />
             <Add directory="/home/siasun/urdf/transforms/include" />
@@ -75,9 +82,13 @@
             <Add directory="/home/siasun/urdf/class_loader/include" />
             <Add directory="/home/siasun/urdf/collision_detection/include" />
             <Add directory="/home/siasun/urdf/collision_detection_fcl/include" />
+            <Add directory="/home/siasun/urdf/constraint_sampler_manager_loader/include" />
+            <Add directory="/home/siasun/urdf/constraint_samplers/include" />
+            <Add directory="/home/siasun/urdf/eigen_conversions/include" />
             <Add directory="/home/siasun/urdf/exceptions/include" />
             <Add directory="/home/siasun/urdf/geometric_shapes/include" />
             <Add directory="/home/siasun/urdf/include" />
+            <Add directory="/home/siasun/urdf/kdl_kinematics_plugin/include" />
             <Add directory="/home/siasun/urdf/kinematic_constraints/include" />
             <Add directory="/home/siasun/urdf/kinematics_base/include" />
             <Add directory="/home/siasun/urdf/kinematics_plugin_loader/include" />
@@ -85,12 +96,15 @@
             <Add directory="/home/siasun/urdf/planning_request_adapter/include" />
             <Add directory="/home/siasun/urdf/planning_scene/include" />
             <Add directory="/home/siasun/urdf/pluginlib/include" />
+            <Add directory="/home/siasun/urdf/profiler/include" />
             <Add directory="/home/siasun/urdf/random_numbers/include" />
             <Add directory="/home/siasun/urdf/rdf_loader/include" />
+            <Add directory="/home/siasun/urdf/resource_retriever/include" />
             <Add directory="/home/siasun/urdf/robot_model/include" />
             <Add directory="/home/siasun/urdf/robot_model_loader/include" />
             <Add directory="/home/siasun/urdf/robot_state/include" />
             <Add directory="/home/siasun/urdf/robot_trajectory/include" />
+            <Add directory="/home/siasun/urdf/rostime/include" />
             <Add directory="/home/siasun/urdf/srdfdom/include" />
             <Add directory="/home/siasun/urdf/trajectory_processing/include" />
             <Add directory="/home/siasun/urdf/transforms/include" />
@@ -189,17 +203,44 @@
       <Unit filename="/home/siasun/urdf/kinematics_plugin_loader/CMakeLists.txt">
           <Option virtualFolder="CMake Files\kinematics_plugin_loader\" />
       </Unit>
+      <Unit filename="/home/siasun/urdf/resource_retriever/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\resource_retriever\" />
+      </Unit>
       <Unit filename="/home/siasun/urdf/geometric_shapes/CMakeLists.txt">
           <Option virtualFolder="CMake Files\geometric_shapes\" />
       </Unit>
       <Unit filename="/home/siasun/urdf/../../../usr/lib/cmake/eigen3/Eigen3Config.cmake">
           <Option virtualFolder="CMake Files\..\..\..\usr\lib\cmake\eigen3\" />
       </Unit>
-      <Unit filename="/home/siasun/urdf/../../../opt/ros/kinetic/share/octomap/octomap-config-version.cmake">
-          <Option virtualFolder="CMake Files\..\..\..\opt\ros\kinetic\share\octomap\" />
+      <Unit filename="/home/siasun/urdf/../../../usr/local/share/octomap/octomap-config-version.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\local\share\octomap\" />
       </Unit>
-      <Unit filename="/home/siasun/urdf/../../../opt/ros/kinetic/share/octomap/octomap-config.cmake">
-          <Option virtualFolder="CMake Files\..\..\..\opt\ros\kinetic\share\octomap\" />
+      <Unit filename="/home/siasun/urdf/../../../usr/local/share/octomap/octomap-config.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\usr\local\share\octomap\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/eigen_conversions/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\eigen_conversions\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/rostime/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\rostime\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/profiler/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\profiler\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/kdl_kinematics_plugin/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\kdl_kinematics_plugin\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/constraint_samplers/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\constraint_samplers\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/ompl/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\ompl\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/ompl/ompl_interface/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\ompl\ompl_interface\" />
+      </Unit>
+      <Unit filename="/home/siasun/urdf/constraint_sampler_manager_loader/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\constraint_sampler_manager_loader\" />
       </Unit>
    </Project>
 </CodeBlocks_project_file>

@@ -1,2 +1,1 @@
-/usr/bin/ar cr libclass_loader.a  CMakeFiles/class_loader.dir/src/class_loader.cpp.o CMakeFiles/class_loader.dir/src/class_loader_core.cpp.o CMakeFiles/class_loader.dir/src/meta_object.cpp.o CMakeFiles/class_loader.dir/src/multi_library_class_loader.cpp.o
-/usr/bin/ranlib libclass_loader.a
+/usr/bin/c++  -fPIC -std=c++0x  -O3 -DNDEBUG   -shared -Wl,-soname,libclass_loader.so -o libclass_loader.so CMakeFiles/class_loader.dir/src/class_loader.cpp.o CMakeFiles/class_loader.dir/src/class_loader_core.cpp.o CMakeFiles/class_loader.dir/src/meta_object.cpp.o CMakeFiles/class_loader.dir/src/multi_library_class_loader.cpp.o  -L/home/siasun/urdf/urdf/lib -lconsole_bridge -lpthread -lPocoFoundation -ldl -Wl,-rpath,/home/siasun/urdf/urdf/lib 

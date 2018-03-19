@@ -1,2 +1,0 @@
-/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-ar cr libmoveit_rdf_loader.a  CMakeFiles/moveit_rdf_loader.dir/src/rdf_loader.cpp.o
-/opt/windriver/wrlinux/5.0-intel-atom-baytrail/sysroots/x86_64-wrlinuxsdk-linux/usr/bin/atom-wrs-linux/atom-wrswrap-linux-gnu-ranlib libmoveit_rdf_loader.a

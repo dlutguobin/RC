@@ -8,7 +8,7 @@ add_library(${MOVEIT_LIB_NAME}
 #set_target_properties(${MOVEIT_LIB_NAME} PROPERTIES VERSION ${${PROJECT_NAME}_VERSION})
 
 #target_link_libraries(${MOVEIT_LIB_NAME} moveit_collision_detection console_bridge urdfdom ${LIBFCL_LIBRARIES} ${Boost_LIBRARIES})
-target_link_libraries(${MOVEIT_LIB_NAME} moveit_collision_detection console_bridge )
+target_link_libraries(${MOVEIT_LIB_NAME} moveit_collision_detection console_bridge fcl)
 #add_dependencies(${MOVEIT_LIB_NAME} ${catkin_EXPORTED_TARGETS})
 
 #install(TARGETS ${MOVEIT_LIB_NAME}
