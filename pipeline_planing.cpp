@@ -49,8 +49,8 @@
 
 // Class_laoder test
 #include <class_loader/class_loader.h>
+#include <moveit/planning_pipeline/planning_pipeline.h>
 
-const char PLANNER_LIBRARY[] = "libmoveit_ompl_planner_plugin.so";
 
 int main(int argc, char** argv)
 {
@@ -147,27 +147,13 @@ int main(int argc, char** argv)
   // :planning_scene:`PlanningScene` that maintains the state of
   // the world (including the robot).
   planning_scene::PlanningScenePtr planning_scene(new planning_scene::PlanningScene(robot_model));
-  planning_interface::PlannerManagerPtr planner_instance;
-  // We will now construct a loader to load a planner, by name.
-  // Note that we are using the ROS pluginlib library here.
-
-  class_loader::MultiLibraryClassLoader dynamic_loader(true);
-
-  // We will get the name of planning plugin we want to load
-  // from the ROS param server, and then load the planner
-  // making sure to catch all exceptions.
-  try {
-    dynamic_loader.loadLibrary(PLANNER_LIBRARY);
-    planner_instance = dynamic_loader.createInstance<planning_interface::PlannerManager>
-            ("ompl_interface::OMPLPlannerManager");
-
-    CONSOLE_BRIDGE_logInform("Using planning interface '%s'", planner_instance->getDescription().c_str());
-    if (!planner_instance->initialize(robot_model, ""))
-      CONSOLE_BRIDGE_logError("Could not initialize planner instance");
-
-  } catch (class_loader::ClassLoaderException & e) {
-    CONSOLE_BRIDGE_logError("ClassLoaderException: %s", e.what());
-  }
+  planning_pipeline::PlanningPipelinePtr planning_pipeline(
+          new planning_pipeline::PlanningPipeline(robot_model, "planning_plugin",
+                                                  "default_planner_request_adapters::AddTimeParameterization "
+                  "default_planner_request_adapters::FixWorkspaceBounds "
+                  "default_planner_request_adapters::FixStartStateBounds "
+                                                          "default_planner_request_adapters::FixStartStateCollision"
+                  "  default_planner_request_adapters::FixStartStatePathConstraints"));
 
 
   /* Sleep a little to allow time to startup rviz, etc. */
@@ -206,9 +192,8 @@ int main(int argc, char** argv)
   // We now construct a planning context that encapsulate the scene,
   // the request and the response. We call the planner using this
   // planning context
-  planning_interface::PlanningContextPtr context =
-      planner_instance->getPlanningContext(planning_scene, req, res.error_code_);
-  context->solve(res);
+
+  planning_pipeline->generatePlan(planning_scene, req, res);
   if (res.error_code_.val != res.error_code_.SUCCESS)
   {
     CONSOLE_BRIDGE_logError("Could not compute plan successfully");
@@ -245,9 +230,7 @@ int main(int argc, char** argv)
 
   // Call the planner and visualize the trajectory
   /* Re-construct the planning context */
-  context = planner_instance->getPlanningContext(planning_scene, req, res.error_code_);
-  /* Call the Planner */
-  context->solve(res);
+  planning_pipeline->generatePlan(planning_scene, req, res);
   /* Check that the planning was successful */
   if (res.error_code_.val != res.error_code_.SUCCESS)
   {
@@ -262,8 +245,7 @@ int main(int argc, char** argv)
   /* Now, we go back to the first goal*/
   req.goal_constraints.clear();
   req.goal_constraints.push_back(pose_goal);
-  context = planner_instance->getPlanningContext(planning_scene, req, res.error_code_);
-  context->solve(res);
+  planning_pipeline->generatePlan(planning_scene, req, res);
 
   res.getMessage(response);
   display_trajectory.trajectory.push_back(response.trajectory);
@@ -304,8 +286,7 @@ int main(int argc, char** argv)
       req.workspace_parameters.max_corner.z = 2.0;
 
   // Call the planner and visualize all the plans created so far.
-  context = planner_instance->getPlanningContext(planning_scene, req, res.error_code_);
-  context->solve(res);
+  planning_pipeline->generatePlan(planning_scene, req, res);
   res.getMessage(response);
   display_trajectory.trajectory.push_back(response.trajectory);
   // Now you should see four planned trajectories in series
@@ -314,7 +295,7 @@ int main(int argc, char** argv)
   // END_TUTORIAL
   sleep_time.sleep();
   CONSOLE_BRIDGE_logInform("Done");
-  planner_instance.reset();
+
 #endif
   return 0;
 }

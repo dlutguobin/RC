@@ -1,1 +1,0 @@
-/usr/bin/c++   -std=c++0x  -O3 -DNDEBUG    CMakeFiles/check_urdf.dir/src/urdf_parser/check_urdf.cpp.o  -o check_urdf  -L/home/siasun/urdf/urdf/lib -rdynamic liburdfdom_model.so liburdfdom_world.so -ltinyxml -lconsole_bridge -Wl,-rpath,/home/siasun/urdf/urdf/lib:/home/siasun/urdf/cmake-build-release/urdf 

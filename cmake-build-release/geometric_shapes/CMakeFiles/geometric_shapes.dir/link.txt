@@ -1,2 +1,0 @@
-/usr/bin/ar cr libgeometric_shapes.a  CMakeFiles/geometric_shapes.dir/src/bodies.cpp.o CMakeFiles/geometric_shapes.dir/src/body_operations.cpp.o CMakeFiles/geometric_shapes.dir/src/mesh_operations.cpp.o CMakeFiles/geometric_shapes.dir/src/shape_extents.cpp.o CMakeFiles/geometric_shapes.dir/src/shape_operations.cpp.o CMakeFiles/geometric_shapes.dir/src/shape_to_marker.cpp.o CMakeFiles/geometric_shapes.dir/src/shapes.cpp.o
-/usr/bin/ranlib libgeometric_shapes.a

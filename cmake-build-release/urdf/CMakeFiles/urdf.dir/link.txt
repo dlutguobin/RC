@@ -1,1 +1,0 @@
-/usr/bin/c++  -fPIC -std=c++0x  -O3 -DNDEBUG   -shared -Wl,-soname,liburdf.so -o liburdf.so CMakeFiles/urdf.dir/src/model.cpp.o  -L/home/siasun/urdf/urdf/lib -ltinyxml liburdfdom_model.so -ltinyxml -lconsole_bridge -Wl,-rpath,/home/siasun/urdf/urdf/lib:/home/siasun/urdf/cmake-build-release/urdf 

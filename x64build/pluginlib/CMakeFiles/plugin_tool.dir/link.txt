@@ -1,1 +1,0 @@
-/usr/bin/c++   -std=c++0x    CMakeFiles/plugin_tool.dir/src/plugin_tool.cpp.o  -o plugin_tool  -L/home/siasun/urdf/urdf/lib -rdynamic -lboost_system -lboost_filesystem -ldl -Wl,-rpath,/home/siasun/urdf/urdf/lib 

@@ -1,2 +1,0 @@
-/usr/bin/ar cr libmoveit_transforms.a  CMakeFiles/moveit_transforms.dir/src/transforms.cpp.o
-/usr/bin/ranlib libmoveit_transforms.a

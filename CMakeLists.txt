@@ -34,6 +34,7 @@ include_directories(
     constraint_samplers/include
     constraint_sampler_manager_loader/include
     resource_retriever/include
+    planning_pipeline/include
 
     #tf/include/
     #tf2/include/
@@ -73,6 +74,8 @@ add_subdirectory(kdl_kinematics_plugin)
 add_subdirectory(constraint_samplers)
 add_subdirectory(ompl)
 add_subdirectory(constraint_sampler_manager_loader)
+add_subdirectory(planning_pipeline)
+add_subdirectory(planning_request_adapter_plugins)
 
 
 #add_subdirectory(tf)
@@ -88,3 +91,9 @@ target_link_libraries(planner_test tinyxml  moveit_robot_model_loader moveit_rob
         moveit_planning_scene moveit_planning_interface moveit_ompl_planner_plugin moveit_ompl_interface
         geometric_shapes)
 
+add_executable(pipeline_test pipeline_planing.cpp)
+target_link_libraries(pipeline_test tinyxml  moveit_robot_model_loader moveit_robot_model moveit_robot_state
+        urdfdom_model urdfdom_world  kdl_parser console_bridge moveit_collision_detection
+        moveit_planning_scene moveit_planning_interface moveit_ompl_planner_plugin moveit_ompl_interface
+        geometric_shapes moveit_planning_pipeline moveit_default_planning_request_adapter_plugins
+        moveit_planning_request_adapter)

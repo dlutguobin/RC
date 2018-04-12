@@ -1,2 +1,0 @@
-/usr/bin/ar qc libmoveit_rdf_loader.a  CMakeFiles/moveit_rdf_loader.dir/src/rdf_loader.cpp.o
-/usr/bin/ranlib libmoveit_rdf_loader.a

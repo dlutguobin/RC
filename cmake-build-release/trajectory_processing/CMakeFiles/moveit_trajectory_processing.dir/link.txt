@@ -1,2 +1,0 @@
-/usr/bin/ar cr libmoveit_trajectory_processing.a  CMakeFiles/moveit_trajectory_processing.dir/src/iterative_time_parameterization.cpp.o CMakeFiles/moveit_trajectory_processing.dir/src/trajectory_tools.cpp.o
-/usr/bin/ranlib libmoveit_trajectory_processing.a

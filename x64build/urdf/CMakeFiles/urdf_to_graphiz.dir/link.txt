@@ -1,1 +1,0 @@
-/usr/bin/c++   -std=c++0x    CMakeFiles/urdf_to_graphiz.dir/src/urdf_parser/urdf_to_graphiz.cpp.o  -o urdf_to_graphiz  -L/home/siasun/urdf/urdf/lib -rdynamic liburdfdom_model.so -ltinyxml -lconsole_bridge -Wl,-rpath,/home/siasun/urdf/urdf/lib:/home/siasun/urdf/x64build/urdf 
